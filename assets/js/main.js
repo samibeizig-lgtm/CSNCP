@@ -22,33 +22,8 @@
 
   var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  // Sous-menus : ouverture au clic sur l'intitulé
-  function closeSubs(except) {
-    document.querySelectorAll(".has-sub.open").forEach(function (li) {
-      if (li === except) return;
-      li.classList.remove("open");
-      li.querySelector(".sub-trigger").setAttribute("aria-expanded", "false");
-    });
-  }
-  document.querySelectorAll(".sub-trigger").forEach(function (btn) {
-    btn.addEventListener("click", function (e) {
-      e.stopPropagation();
-      var li = btn.parentNode;
-      var open = !li.classList.contains("open");
-      closeSubs(li);
-      li.classList.toggle("open", open);
-      btn.setAttribute("aria-expanded", String(open));
-    });
-  });
-  document.addEventListener("click", function (e) {
-    if (!e.target.closest(".has-sub")) closeSubs(null);
-  });
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") closeSubs(null);
-  });
   document.querySelectorAll(".submenu a").forEach(function (a) {
     a.addEventListener("click", function () {
-      closeSubs(null);
       if (menu && menu.classList.contains("open")) {
         toggle.setAttribute("aria-expanded", "false");
         menu.classList.remove("open");
@@ -73,31 +48,40 @@
     });
   }
 
-  // Chiffres clés : comptage depuis 0 à l'arrivée dans l'écran
-  // (les nombres après « / » restent fixes : 2/3 compte de 0/3 à 2/3)
-  var numRe = /(^|[^\/\d])(\d[\d\s\u202f\u00a0]*\d|\d)/g;
-  function fmt(n) { return n >= 1000 ? String(n).replace(/\B(?=(\d{3})+(?!\d))/g, "\u202f") : String(n); }
-  function render(el, ratio) {
-    el.textContent = el.dataset.final.replace(numRe, function (m, pre, num) {
-      return pre + fmt(Math.round(parseInt(num.replace(/\D/g, ""), 10) * ratio));
+  // Chiffres clés : chiffres qui défilent comme un compteur de chronomètre
+  function odometer(el) {
+    var final = el.textContent;
+    el.setAttribute("aria-label", final);
+    var html = "", i = 0;
+    final.split("").forEach(function (ch) {
+      if (/\d/.test(ch)) {
+        var digits = "";
+        for (var n = 0; n < 30; n++) digits += "<span>" + (n % 10) + "</span>";
+        var target = 20 + parseInt(ch, 10);
+        html += '<span class="odo" aria-hidden="true"><span class="odo-strip" data-target="' + target +
+          '" style="--d:' + (1.6 + i * 0.25).toFixed(2) + 's">' + digits + "</span></span>";
+        i++;
+      } else {
+        html += '<span aria-hidden="true">' + ch + "</span>";
+      }
     });
+    el.innerHTML = html;
   }
-  function countUp(el) {
-    var start = null, dur = 1800;
-    function frame(ts) {
-      if (!start) start = ts;
-      var p = Math.min((ts - start) / dur, 1);
-      render(el, 1 - Math.pow(1 - p, 3));
-      if (p < 1) requestAnimationFrame(frame); else el.textContent = el.dataset.final;
-    }
-    requestAnimationFrame(frame);
+  function spin(el) {
+    el.querySelectorAll(".odo-strip").forEach(function (s) {
+      s.style.transform = "translateY(-" + (parseInt(s.dataset.target, 10) * 1.1) + "em)";
+    });
   }
   var figs = document.querySelectorAll(".figure strong");
   if (figs.length && "IntersectionObserver" in window) {
-    figs.forEach(function (f) { f.dataset.final = f.textContent; render(f, 0); });
+    figs.forEach(odometer);
     var io3 = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
-        if (en.isIntersecting) { countUp(en.target); io3.unobserve(en.target); }
+        if (en.isIntersecting) {
+          var el = en.target;
+          requestAnimationFrame(function () { requestAnimationFrame(function () { spin(el); }); });
+          io3.unobserve(el);
+        }
       });
     }, { threshold: 0.4 });
     figs.forEach(function (f) { io3.observe(f); });

@@ -133,11 +133,7 @@ def nav_html(lang, tr, current, root, submenus=True):
             subs = "".join(
                 f'<li><a href="{href}#{anchor}">{tr["subnav"][key]}</a></li>' for anchor, key in SUBNAV[slug]
             )
-            items.append(
-                f'<li class="has-sub"><button class="sub-trigger" type="button" aria-expanded="false" '
-                f'aria-controls="sub-{slug}"{cur}>{tr["nav"][slug]}</button>'
-                f'<ul class="submenu" id="sub-{slug}">{subs}</ul></li>'
-            )
+            items.append(f'<li class="has-sub">{link}<ul class="submenu" id="sub-{slug}">{subs}</ul></li>')
         else:
             items.append(f"<li>{link}</li>")
     return "\n".join(items)
