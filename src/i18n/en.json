@@ -28,8 +28,7 @@
     "home": "Home",
     "menu": "Menu",
     "main_nav": "Main navigation",
-    "on_this_page": "On this page",
-    "photo_credit": "Photo: Unsplash"
+    "on_this_page": "On this page"
   },
   "nav": {
     "index": "Home",
@@ -90,9 +89,7 @@
     "card_news": "Sector news and the Chamber's positions.",
     "card_press": "Press releases, key figures, media kit and press contact.",
     "news_title": "Latest news",
-    "news_all": "All news",
-    "photos_title": "Serving patients",
-    "photos_lead": "In Tunisia's private clinics, dedicated teams support every patient, from consultation to recovery."
+    "news_all": "All news"
   },
   "figures": {
     "title": "Key figures",
@@ -283,7 +280,6 @@
   "subnav": {
     "mission": "Mission",
     "governance": "Governance",
-    "team": "Team",
-    "open": "Show submenu"
+    "team": "Team"
   }
 }

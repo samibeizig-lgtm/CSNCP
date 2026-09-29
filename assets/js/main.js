@@ -22,26 +22,33 @@
 
   var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  // Sous-menus (clic, clavier, mobile)
-  document.querySelectorAll(".sub-toggle").forEach(function (btn) {
+  // Sous-menus : ouverture au clic sur l'intitulé
+  function closeSubs(except) {
+    document.querySelectorAll(".has-sub.open").forEach(function (li) {
+      if (li === except) return;
+      li.classList.remove("open");
+      li.querySelector(".sub-trigger").setAttribute("aria-expanded", "false");
+    });
+  }
+  document.querySelectorAll(".sub-trigger").forEach(function (btn) {
     btn.addEventListener("click", function (e) {
       e.stopPropagation();
       var li = btn.parentNode;
       var open = !li.classList.contains("open");
+      closeSubs(li);
       li.classList.toggle("open", open);
       btn.setAttribute("aria-expanded", String(open));
     });
   });
   document.addEventListener("click", function (e) {
-    document.querySelectorAll(".has-sub.open").forEach(function (li) {
-      if (!li.contains(e.target)) {
-        li.classList.remove("open");
-        li.querySelector(".sub-toggle").setAttribute("aria-expanded", "false");
-      }
-    });
+    if (!e.target.closest(".has-sub")) closeSubs(null);
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeSubs(null);
   });
   document.querySelectorAll(".submenu a").forEach(function (a) {
     a.addEventListener("click", function () {
+      closeSubs(null);
       if (menu && menu.classList.contains("open")) {
         toggle.setAttribute("aria-expanded", "false");
         menu.classList.remove("open");
@@ -49,15 +56,8 @@
     });
   });
 
-  // Photos : fond de repli si l'image ne se charge pas
-  document.querySelectorAll(".photo img").forEach(function (img) {
-    function broken() { img.closest(".photo").classList.add("broken"); }
-    if (img.complete && img.naturalWidth === 0) broken();
-    img.addEventListener("error", broken);
-  });
-
   // Apparition au défilement
-  var revealSel = ".section-head, .card, .figure, .photo, .member, .block > h2, .timeline li, .steps li";
+  var revealSel = ".section-head, .card, .member, .block > h2, .timeline li, .steps li";
   var io2 = "IntersectionObserver" in window && !reduced ? new IntersectionObserver(function (entries) {
     entries.forEach(function (en) {
       if (en.isIntersecting) { en.target.classList.add("in"); io2.unobserve(en.target); }
@@ -73,29 +73,33 @@
     });
   }
 
-  // Chiffres clés : animation de comptage
+  // Chiffres clés : comptage depuis 0 à l'arrivée dans l'écran
+  // (les nombres après « / » restent fixes : 2/3 compte de 0/3 à 2/3)
+  var numRe = /(^|[^\/\d])(\d[\d\s\u202f\u00a0]*\d|\d)/g;
+  function fmt(n) { return n >= 1000 ? String(n).replace(/\B(?=(\d{3})+(?!\d))/g, "\u202f") : String(n); }
+  function render(el, ratio) {
+    el.textContent = el.dataset.final.replace(numRe, function (m, pre, num) {
+      return pre + fmt(Math.round(parseInt(num.replace(/\D/g, ""), 10) * ratio));
+    });
+  }
   function countUp(el) {
-    var original = el.textContent;
-    var re = /\d[\d\s\u202f\u00a0]*\d|\d/g;
-    var nums = (original.match(re) || []).map(function (n) { return parseInt(n.replace(/\D/g, ""), 10); });
-    if (!nums.length || reduced) return;
-    var start = null, dur = 1600;
-    function fmt(n) { return n >= 1000 ? String(n).replace(/\B(?=(\d{3})+(?!\d))/g, "\u202f") : String(n); }
+    var start = null, dur = 1800;
     function frame(ts) {
       if (!start) start = ts;
-      var p = Math.min((ts - start) / dur, 1), e = 1 - Math.pow(1 - p, 3), k = 0;
-      el.textContent = original.replace(re, function () { return fmt(Math.round(nums[k++] * e)); });
-      if (p < 1) requestAnimationFrame(frame); else el.textContent = original;
+      var p = Math.min((ts - start) / dur, 1);
+      render(el, 1 - Math.pow(1 - p, 3));
+      if (p < 1) requestAnimationFrame(frame); else el.textContent = el.dataset.final;
     }
     requestAnimationFrame(frame);
   }
   var figs = document.querySelectorAll(".figure strong");
   if (figs.length && "IntersectionObserver" in window) {
+    figs.forEach(function (f) { f.dataset.final = f.textContent; render(f, 0); });
     var io3 = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
         if (en.isIntersecting) { countUp(en.target); io3.unobserve(en.target); }
       });
-    }, { threshold: 0.6 });
+    }, { threshold: 0.4 });
     figs.forEach(function (f) { io3.observe(f); });
   }
 

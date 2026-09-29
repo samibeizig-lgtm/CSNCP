@@ -28,8 +28,7 @@
     "home": "Accueil",
     "menu": "Menu",
     "main_nav": "Navigation principale",
-    "on_this_page": "Sur cette page",
-    "photo_credit": "Photo : Unsplash"
+    "on_this_page": "Sur cette page"
   },
   "nav": {
     "index": "Accueil",
@@ -90,9 +89,7 @@
     "card_news": "Actualités du secteur et prises de position de la Chambre.",
     "card_press": "Communiqués, chiffres clés, kit média et contact presse.",
     "news_title": "Dernières actualités",
-    "news_all": "Toutes les actualités",
-    "photos_title": "Au service des patients",
-    "photos_lead": "Dans les cliniques privées de Tunisie, des équipes engagées accompagnent chaque patient, de la consultation au rétablissement."
+    "news_all": "Toutes les actualités"
   },
   "figures": {
     "title": "Chiffres clés",
@@ -283,7 +280,6 @@
   "subnav": {
     "mission": "Mission",
     "governance": "Gouvernance",
-    "team": "Équipe",
-    "open": "Afficher le sous-menu"
+    "team": "Équipe"
   }
 }
