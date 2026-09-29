@@ -28,13 +28,41 @@ Puis régénérer le site (Python 3, aucune dépendance) :
 python3 build.py
 ```
 
-Les pages sont écrites dans `fr/`, `ar/`, `en/` ainsi que `sitemap.xml`. Ne pas modifier ces dossiers à la main.
+Le site est généré dans `dist/` (non versionné) : pages `fr/`, `ar/`, `en/`, `assets/`, `sitemap.xml` et les fichiers de `src/static/` (`index.html` qui redirige vers la langue du navigateur, `404.html`, `_headers`, `robots.txt`).
 
-Aperçu local : `python3 -m http.server` puis http://localhost:8000.
+Aperçu local : `python3 build.py && cd dist && python3 -m http.server` puis http://localhost:8000.
 
-## Hébergement
+## Mise en ligne sur Cloudflare Pages
 
-Site 100 % statique : GitHub Pages (branche, dossier racine), Netlify ou tout serveur web. `index.html` à la racine redirige vers la langue du navigateur.
+### Option 1 — connexion au dépôt GitHub (recommandée)
+
+Chaque `git push` redéploie automatiquement le site.
+
+1. Cloudflare → **Workers & Pages** → **Create** → onglet **Pages** → **Connect to Git**.
+2. Choisir le dépôt `CSNCP` et la branche de production (`main`).
+3. Paramètres de build :
+   - Framework preset : **None**
+   - Build command : `python3 build.py`
+   - Build output directory : `dist`
+4. **Save and Deploy**. Le site est disponible sur `csncp.pages.dev`.
+5. Onglet **Custom domains** → ajouter `csncp.tn` et `www.csncp.tn`.
+
+Les autres branches obtiennent une URL de prévisualisation (`<branche>.csncp.pages.dev`).
+
+### Option 2 — déploiement manuel en ligne de commande
+
+```sh
+python3 build.py
+npx wrangler login
+npx wrangler pages deploy dist --project-name csncp
+```
+
+`wrangler.toml` indique déjà le dossier de sortie (`dist`).
+
+### Fichiers Cloudflare
+
+- `src/static/_headers` : en-têtes de sécurité et durée de cache des images, CSS et JS.
+- `src/static/404.html` : page d'erreur trilingue.
 
 ## À compléter avant mise en ligne
 
@@ -42,6 +70,6 @@ Site 100 % statique : GitHub Pages (branche, dossier racine), Netlify ou tout se
 - Composition du bureau exécutif, dates de l'historique, statuts et règlement intérieur (PDF dans `assets/docs/`).
 - Chiffres clés (actuellement `XX`), adresse, téléphone et e-mails définitifs.
 - URL des pages Facebook, Instagram et LinkedIn (`src/layout.html`).
-- Nom de domaine (`SITE_URL` dans `build.py`, `robots.txt`).
+- Nom de domaine (`SITE_URL` dans `build.py`, `src/static/robots.txt`, `src/static/index.html`).
 - Formulaire de contact : actuellement en `mailto:` ; à brancher sur un service d'envoi (Formspree, Netlify Forms…) si besoin.
 - Relecture juridique de l'Espace patient (CNAM, droits, recours).

@@ -7,7 +7,9 @@ Sources :
   src/i18n/<lang>.json   textes traduits (fr, ar, en)
   src/data/*.json        annuaire, actualités, chiffres clés
 
-Sortie : /<lang>/<slug>.html et /<lang>/actualites/<id>.html à la racine du dépôt.
+Sortie : dist/ (dossier publié sur Cloudflare Pages)
+  dist/<lang>/<slug>.html, dist/<lang>/actualites/<id>.html,
+  dist/assets/, fichiers de src/static/ (index, robots, _headers, 404), sitemap.xml
 
 Syntaxe des gabarits :
   {{ cle.sous_cle }}   texte traduit (HTML autorisé)
@@ -21,6 +23,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 SRC = ROOT / "src"
+OUT = ROOT / "dist"
 LANGS = ["fr", "ar", "en"]
 PAGES = [
     "index",
@@ -137,12 +140,16 @@ def build():
     board = load_json(SRC / "data" / "bureau.json")
     article_tpl = (SRC / "article.html").read_text(encoding="utf-8")
 
+    if OUT.exists():
+        shutil.rmtree(OUT)
+    shutil.copytree(ROOT / "assets", OUT / "assets")
+    for f in (SRC / "static").iterdir():
+        shutil.copy2(f, OUT / f.name)
+
     count = 0
     for lang in LANGS:
         tr = load_json(SRC / "i18n" / f"{lang}.json")
-        out_dir = ROOT / lang
-        if out_dir.exists():
-            shutil.rmtree(out_dir)
+        out_dir = OUT / lang
         (out_dir / "actualites").mkdir(parents=True)
 
         def page(slug, body_tpl, depth, title, description, slug_path, extra=None):
@@ -209,13 +216,13 @@ def build():
     urls = [f"{SITE_URL}/{l}/{s}.html" for l in LANGS for s in PAGES]
     urls += [f"{SITE_URL}/{l}/actualites/{n['id']}.html" for l in LANGS for n in news]
     sitemap = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
-    (ROOT / "sitemap.xml").write_text(
+    (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         f"{sitemap}\n</urlset>\n",
         encoding="utf-8",
     )
-    print(f"{count} pages générées ({', '.join(LANGS)}).")
+    print(f"{count} pages générées ({', '.join(LANGS)}) dans {OUT.name}/.")
 
 
 if __name__ == "__main__":
