@@ -28,7 +28,8 @@
     "home": "Home",
     "menu": "Menu",
     "main_nav": "Main navigation",
-    "on_this_page": "On this page"
+    "on_this_page": "On this page",
+    "photo_credit": "Photo: Unsplash"
   },
   "nav": {
     "index": "Home",
@@ -89,11 +90,13 @@
     "card_news": "Sector news and the Chamber's positions.",
     "card_press": "Press releases, key figures, media kit and press contact.",
     "news_title": "Latest news",
-    "news_all": "All news"
+    "news_all": "All news",
+    "photos_title": "Serving patients",
+    "photos_lead": "In Tunisia's private clinics, dedicated teams support every patient, from consultation to recovery."
   },
   "figures": {
     "title": "Key figures",
-    "note": "Figures to be completed and approved by the Board before publication."
+    "note": "Source: National Syndical Chamber of Private Clinics, September 2026. Figures for the private clinic sector."
   },
   "social": {
     "title": "One website, three networks",
@@ -127,7 +130,15 @@
     "statutes_doc": "Statutes of the Chamber",
     "ri_doc": "Internal rules",
     "history_title": "History",
-    "history_html": "<ol class=\"timeline\"><li><b>Date to be completed</b>Creation of the Chamber within UTICA.</li><li><b>Date to be completed</b>Key milestones: agreements, reforms, events.</li><li><b>2026</b>Adoption of a visual identity and launch of the official website and social media.</li></ol>"
+    "history_html": "<ol class=\"timeline\"><li><b>Date to be completed</b>Creation of the Chamber within UTICA.</li><li><b>Date to be completed</b>Key milestones: agreements, reforms, events.</li><li><b>2026</b>Adoption of a visual identity and launch of the official website and social media.</li></ol>",
+    "governance_title": "Governance",
+    "governance_lead": "The Chamber is run by bodies elected by its members, within the framework of the statutes of UTICA and the National Health Federation.",
+    "ag_title": "General assembly",
+    "ag": "Brings together all member clinics. It elects the executive board, sets the main orientations and may be convened in extraordinary session.",
+    "bureau_title": "Executive board",
+    "bureau": "Elected by the general assembly, it leads the Chamber's work and represents it before public authorities and partners.",
+    "team_title": "Team",
+    "team_lead": "The permanent team follows up on files, supports members and handles the Chamber's communications. Composition to be completed."
   },
   "directory": {
     "title": "Member clinic directory",
@@ -268,5 +279,11 @@
     "address": "CSNCP — UTICA headquarters<br>Tunis, Tunisia<br>Tel.: +216 XX XXX XXX<br><a href=\"mailto:contact@csncp.tn\">contact@csncp.tn</a>",
     "follow": "Follow us",
     "official": "The website is the official source of information from the Chamber."
+  },
+  "subnav": {
+    "mission": "Mission",
+    "governance": "Governance",
+    "team": "Team",
+    "open": "Show submenu"
   }
 }

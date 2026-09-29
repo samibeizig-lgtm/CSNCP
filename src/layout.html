@@ -12,6 +12,7 @@
 <meta property="og:image" content="https://www.csncp.tn/assets/img/logo-vertical.png">
 <meta property="og:locale" content="{{ site.locale }}">
 <meta name="theme-color" content="#035FCA">
+<script>document.documentElement.classList.add("js")</script>
 <link rel="icon" type="image/png" sizes="32x32" href="{{ @root }}assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="{{ @root }}assets/img/favicon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,7 +57,7 @@
     </div>
     <div>
       <h2>{{ footer.nav }}</h2>
-      <ul class="footer-links">{{ @nav }}<li><a href="{{ @prefix }}contact.html">{{ nav.contact }}</a></li></ul>
+      <ul class="footer-links">{{ @footer_nav }}<li><a href="{{ @prefix }}contact.html">{{ nav.contact }}</a></li></ul>
     </div>
     <div>
       <h2>{{ footer.contact }}</h2>

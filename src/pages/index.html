@@ -10,13 +10,7 @@
       </div>
     </div>
     <div class="hero-visual">
-      <img src="{{ @root }}assets/img/symbole.png" width="512" height="502" alt="">
-      <p class="hero-name">
-        <strong>CSNCP</strong>
-        <span lang="fr" dir="ltr">{{ site.name_fr }}</span>
-        <span lang="ar" dir="rtl">{{ site.name_ar }}</span>
-        <small>{{ site.utica_short }}</small>
-      </p>
+      <img class="hero-logo" src="{{ @root }}assets/img/logo-vertical.png" width="560" height="743" alt="CSNCP — {{ site.name_fr }} — {{ site.name_ar }} — Tunisie">
     </div>
   </div>
 </section>
@@ -34,6 +28,20 @@
       <article class="card link-card"><div class="dot c6"></div><h3><a href="{{ @prefix }}la-chambre.html">{{ nav.la-chambre }}</a></h3><p>{{ home.card_chamber }}</p></article>
       <article class="card link-card"><div class="dot c2"></div><h3><a href="{{ @prefix }}actualites.html">{{ nav.actualites }}</a></h3><p>{{ home.card_news }}</p></article>
       <article class="card link-card"><div class="dot c3"></div><h3><a href="{{ @prefix }}presse.html">{{ nav.presse }}</a></h3><p>{{ home.card_press }}</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>{{ home.photos_title }}</h2>
+      <p>{{ home.photos_lead }}</p>
+    </div>
+    <div class="gallery">
+      {{ @photo_consultation }}
+      {{ @photo_hospitalisation }}
+      {{ @photo_pediatrie }}
     </div>
   </div>
 </section>

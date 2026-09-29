@@ -11,8 +11,8 @@
     <nav class="toc" aria-label="{{ ui.on_this_page }}">
       <ul>
         <li><a href="#mission">{{ chamber.mission_title }}</a></li>
-        <li><a href="#bureau">{{ chamber.board_title }}</a></li>
-        <li><a href="#statuts">{{ chamber.statutes_title }}</a></li>
+        <li><a href="#gouvernance">{{ chamber.governance_title }}</a></li>
+        <li><a href="#equipe">{{ chamber.team_title }}</a></li>
         <li><a href="#historique">{{ chamber.history_title }}</a></li>
       </ul>
     </nav>
@@ -28,19 +28,27 @@
         </div>
       </div>
 
-      <div class="block" id="bureau">
-        <h2>{{ chamber.board_title }}</h2>
-        <p>{{ chamber.board_lead }}</p>
+      <div class="block" id="gouvernance">
+        <h2>{{ chamber.governance_title }}</h2>
+        <p class="lead">{{ chamber.governance_lead }}</p>
+        <div class="grid grid-2">
+          <div class="card"><div class="dot c6"></div><h3>{{ chamber.ag_title }}</h3><p>{{ chamber.ag }}</p></div>
+          <div class="card"><div class="dot c3"></div><h3>{{ chamber.bureau_title }}</h3><p>{{ chamber.bureau }}</p></div>
+        </div>
+        <h3 class="sub-h">{{ chamber.bureau_title }}</h3>
         <ul class="members">{{ @board }}</ul>
-      </div>
-
-      <div class="block prose" id="statuts">
-        <h2>{{ chamber.statutes_title }}</h2>
-        {{ chamber.statutes_html }}
+        <h3 class="sub-h" id="statuts">{{ chamber.statutes_title }}</h3>
+        <div class="prose">{{ chamber.statutes_html }}</div>
         <ul class="downloads">
           <li><a href="{{ @root }}assets/docs/">{{ chamber.statutes_doc }}</a><span>PDF</span></li>
           <li><a href="{{ @root }}assets/docs/">{{ chamber.ri_doc }}</a><span>PDF</span></li>
         </ul>
+      </div>
+
+      <div class="block" id="equipe">
+        <h2>{{ chamber.team_title }}</h2>
+        <p>{{ chamber.team_lead }}</p>
+        <ul class="members">{{ @team }}</ul>
       </div>
 
       <div class="block" id="historique">

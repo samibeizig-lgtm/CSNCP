@@ -1,6 +1,6 @@
 [
-  {"value": "XX", "fr": "cliniques privées adhérentes", "ar": "مصحة خاصة منخرطة", "en": "member private clinics"},
-  {"value": "XX XXX", "fr": "lits d'hospitalisation", "ar": "سرير استشفائي", "en": "hospital beds"},
-  {"value": "XX XXX", "fr": "emplois directs", "ar": "موطن شغل مباشر", "en": "direct jobs"},
-  {"value": "XXX XXX", "fr": "patients étrangers accueillis par an", "ar": "مريض أجنبي سنويا", "en": "international patients per year"}
+  {"value": "112", "fr": "cliniques privées en Tunisie", "ar": "مصحة خاصة في تونس", "en": "private clinics in Tunisia"},
+  {"value": "7 100+", "fr": "lits d'hospitalisation", "ar": "سرير استشفائي", "en": "hospital beds"},
+  {"value": "2/3", "fr": "des équipements médicaux lourds du pays", "ar": "من التجهيزات الطبية الثقيلة في البلاد", "en": "of the country's heavy medical equipment"},
+  {"value": "30–70 %", "fr": "de l'activité des cliniques liée à la CNAM", "ar": "من نشاط المصحات مرتبط بالصندوق الوطني للتأمين على المرض", "en": "of clinic activity linked to CNAM"}
 ]

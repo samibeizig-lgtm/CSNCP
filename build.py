@@ -120,12 +120,48 @@ def board_html(board, lang):
     )
 
 
-def nav_html(lang, tr, current, root):
+SUBNAV = {"la-chambre": [("mission", "mission"), ("gouvernance", "governance"), ("equipe", "team")]}
+
+
+def nav_html(lang, tr, current, root, submenus=True):
     items = []
     for slug in NAV:
         cur = ' aria-current="page"' if slug == current else ""
-        items.append(f'<li><a href="{root}{lang}/{slug}.html"{cur}>{tr["nav"][slug]}</a></li>')
+        href = f"{root}{lang}/{slug}.html"
+        link = f'<a href="{href}"{cur}>{tr["nav"][slug]}</a>'
+        if submenus and slug in SUBNAV:
+            subs = "".join(
+                f'<li><a href="{href}#{anchor}">{tr["subnav"][key]}</a></li>' for anchor, key in SUBNAV[slug]
+            )
+            items.append(
+                f'<li class="has-sub">{link}'
+                f'<button class="sub-toggle" aria-expanded="false" aria-label="{tr["subnav"]["open"]} — {tr["nav"][slug]}"></button>'
+                f'<ul class="submenu">{subs}</ul></li>'
+            )
+        else:
+            items.append(f"<li>{link}</li>")
     return "\n".join(items)
+
+
+def team_html(team, lang):
+    return "\n".join(
+        f'<li class="member"><span class="avatar" aria-hidden="true"></span>'
+        f'<span><strong>{html.escape(m["name"][lang])}</strong><em>{html.escape(m["role"][lang])}</em></span></li>'
+        for m in team
+    )
+
+
+def photo_html(photos, key, lang, tr, root, cls="photo"):
+    ph = photos[key]
+    src = ph["src"] if ph["src"].startswith("http") else root + ph["src"]
+    credit = ""
+    if ph.get("page"):
+        credit = f'<a class="credit" href="{html.escape(ph["page"])}" rel="noopener" target="_blank">{tr["ui"]["photo_credit"]}</a>'
+    return (
+        f'<figure class="{cls}"><img src="{html.escape(src)}" alt="{html.escape(ph[lang])}" loading="lazy" '
+        f'decoding="async" referrerpolicy="no-referrer" width="1400" height="933">'
+        f"<figcaption>{html.escape(ph[lang])}{credit}</figcaption></figure>"
+    )
 
 
 def lang_switch(lang, slug_path, root):
@@ -152,6 +188,8 @@ def build():
     news = sorted(load_json(SRC / "data" / "actualites.json"), key=lambda n: n["date"], reverse=True)
     figures = load_json(SRC / "data" / "chiffres.json")
     board = load_json(SRC / "data" / "bureau.json")
+    team = load_json(SRC / "data" / "equipe.json")
+    photos = load_json(SRC / "data" / "photos.json")
     article_tpl = (SRC / "article.html").read_text(encoding="utf-8")
 
     if OUT.exists():
@@ -185,6 +223,11 @@ def build():
                 "news_press": news_cards([n for n in news if n["type"] == "communique"], lang, tr, prefix),
                 "figures": figures_html(figures, lang),
                 "board": board_html(board, lang),
+                "team": team_html(team, lang),
+                "footer_nav": nav_html(lang, tr, slug, root, submenus=False),
+                "photo_consultation": photo_html(photos, "consultation", lang, tr, root),
+                "photo_hospitalisation": photo_html(photos, "hospitalisation", lang, tr, root),
+                "photo_pediatrie": photo_html(photos, "pediatrie", lang, tr, root),
                 "clinics_json": json.dumps(clinics, ensure_ascii=False).replace("</", "<\\/"),
                 "i18n_json": json.dumps(tr["directory"], ensure_ascii=False).replace("</", "<\\/"),
             }

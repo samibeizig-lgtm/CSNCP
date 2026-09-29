@@ -28,7 +28,8 @@
     "home": "Accueil",
     "menu": "Menu",
     "main_nav": "Navigation principale",
-    "on_this_page": "Sur cette page"
+    "on_this_page": "Sur cette page",
+    "photo_credit": "Photo : Unsplash"
   },
   "nav": {
     "index": "Accueil",
@@ -89,11 +90,13 @@
     "card_news": "Actualités du secteur et prises de position de la Chambre.",
     "card_press": "Communiqués, chiffres clés, kit média et contact presse.",
     "news_title": "Dernières actualités",
-    "news_all": "Toutes les actualités"
+    "news_all": "Toutes les actualités",
+    "photos_title": "Au service des patients",
+    "photos_lead": "Dans les cliniques privées de Tunisie, des équipes engagées accompagnent chaque patient, de la consultation au rétablissement."
   },
   "figures": {
     "title": "Chiffres clés",
-    "note": "Chiffres à compléter et à valider par le Bureau avant publication."
+    "note": "Source : Chambre syndicale nationale des cliniques privées, septembre 2026. Données du secteur des cliniques privées."
   },
   "social": {
     "title": "Un site, trois réseaux",
@@ -127,7 +130,15 @@
     "statutes_doc": "Statuts de la Chambre",
     "ri_doc": "Règlement intérieur",
     "history_title": "Historique",
-    "history_html": "<ol class=\"timeline\"><li><b>Date à compléter</b>Création de la Chambre au sein de l'UTICA.</li><li><b>Date à compléter</b>Étapes marquantes : conventions, réformes, événements.</li><li><b>2026</b>Adoption d'une identité visuelle et lancement du site officiel et des réseaux sociaux.</li></ol>"
+    "history_html": "<ol class=\"timeline\"><li><b>Date à compléter</b>Création de la Chambre au sein de l'UTICA.</li><li><b>Date à compléter</b>Étapes marquantes : conventions, réformes, événements.</li><li><b>2026</b>Adoption d'une identité visuelle et lancement du site officiel et des réseaux sociaux.</li></ol>",
+    "governance_title": "Gouvernance",
+    "governance_lead": "La Chambre est administrée par des instances élues par ses adhérents, dans le cadre des statuts de l'UTICA et de la Fédération nationale de la santé.",
+    "ag_title": "Assemblée générale",
+    "ag": "Réunit l'ensemble des cliniques adhérentes. Elle élit le bureau exécutif, fixe les grandes orientations et peut être convoquée en session extraordinaire.",
+    "bureau_title": "Bureau exécutif",
+    "bureau": "Élu par l'assemblée générale, il conduit l'action de la Chambre et la représente auprès des pouvoirs publics et des partenaires.",
+    "team_title": "Équipe",
+    "team_lead": "L'équipe permanente assure le suivi des dossiers, l'accompagnement des adhérents et la communication de la Chambre. Composition à compléter."
   },
   "directory": {
     "title": "Annuaire des cliniques adhérentes",
@@ -268,5 +279,11 @@
     "address": "CSNCP — Siège de l'UTICA<br>Tunis, Tunisie<br>Tél. : +216 XX XXX XXX<br><a href=\"mailto:contact@csncp.tn\">contact@csncp.tn</a>",
     "follow": "Suivez-nous",
     "official": "Le site web est la source officielle des informations de la Chambre."
+  },
+  "subnav": {
+    "mission": "Mission",
+    "governance": "Gouvernance",
+    "team": "Équipe",
+    "open": "Afficher le sous-menu"
   }
 }
