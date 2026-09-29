@@ -74,7 +74,9 @@ p { margin: 0 0 1em; }
 /* ---------- Barre supérieure ---------- */
 .topbar { background: var(--bleu); color: #fff; font-size: .85rem; }
 .topbar-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 38px; }
-.topbar-inner > span a { color: #fff; text-decoration-color: rgba(255,255,255,.5); }
+.topbar a, .topbar a:visited, .topbar a:hover { color: #fff; }
+.topbar-inner > span a { text-decoration-color: rgba(255,255,255,.55); }
+.topbar-inner > span a:hover { text-decoration-color: #fff; }
 .langs { display: flex; gap: 4px; }
 .langs a {
   color: #fff; text-decoration: none; padding: 3px 10px; border-radius: 999px;

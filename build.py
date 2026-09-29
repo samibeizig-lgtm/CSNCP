@@ -15,6 +15,7 @@ Syntaxe des gabarits :
   {{ cle.sous_cle }}   texte traduit (HTML autorisé)
   {{ @variable }}      variable calculée (lang, dir, root, ...)
 """
+import hashlib
 import html
 import json
 import re
@@ -180,6 +181,12 @@ def build():
     for f in (SRC / "static").iterdir():
         shutil.copy2(f, OUT / f.name)
 
+    # Empreinte des fichiers CSS/JS : forcer le rechargement après chaque mise à jour
+    def ver(rel):
+        return hashlib.sha1((ROOT / rel).read_bytes()).hexdigest()[:10]
+
+    versions = {"v_css": ver("assets/css/style.css"), "v_js": ver("assets/js/main.js"), "v_dir": ver("assets/js/annuaire.js")}
+
     count = 0
     for lang in LANGS:
         tr = load_json(SRC / "i18n" / f"{lang}.json")
@@ -210,6 +217,7 @@ def build():
                 "clinics_json": json.dumps(clinics, ensure_ascii=False).replace("</", "<\\/"),
                 "i18n_json": json.dumps(tr["directory"], ensure_ascii=False).replace("</", "<\\/"),
             }
+            v.update(versions)
             v.update(extra or {})
             body = render(body_tpl, tr, v, slug)
             v["content"] = body
