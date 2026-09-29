@@ -1,0 +1,68 @@
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <p class="eyebrow">{{ home.eyebrow }}</p>
+      <h1>{{ home.title }}</h1>
+      <p class="lead">{{ home.lead }}</p>
+      <div class="actions">
+        <a class="btn arrow" href="{{ @prefix }}annuaire.html">{{ home.cta_directory }}</a>
+        <a class="btn ghost" href="{{ @prefix }}espace-patient.html">{{ home.cta_patient }}</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="{{ @root }}assets/img/symbole.png" width="512" height="502" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ home.access_title }}</h2>
+      <p>{{ home.access_lead }}</p>
+    </div>
+    <div class="grid grid-3">
+      <article class="card link-card"><div class="dot c5"></div><h3><a href="{{ @prefix }}annuaire.html">{{ nav.annuaire }}</a></h3><p>{{ home.card_directory }}</p></article>
+      <article class="card link-card"><div class="dot c1"></div><h3><a href="{{ @prefix }}espace-patient.html">{{ nav.espace-patient }}</a></h3><p>{{ home.card_patient }}</p></article>
+      <article class="card link-card"><div class="dot c4"></div><h3><a href="{{ @prefix }}medecine-de-voyage.html">{{ nav.medecine-de-voyage }}</a></h3><p>{{ home.card_travel }}</p></article>
+      <article class="card link-card"><div class="dot c6"></div><h3><a href="{{ @prefix }}la-chambre.html">{{ nav.la-chambre }}</a></h3><p>{{ home.card_chamber }}</p></article>
+      <article class="card link-card"><div class="dot c2"></div><h3><a href="{{ @prefix }}actualites.html">{{ nav.actualites }}</a></h3><p>{{ home.card_news }}</p></article>
+      <article class="card link-card"><div class="dot c3"></div><h3><a href="{{ @prefix }}presse.html">{{ nav.presse }}</a></h3><p>{{ home.card_press }}</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section blue">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ figures.title }}</h2>
+    </div>
+    <div class="figures">{{ @figures }}</div>
+    <p class="note">{{ figures.note }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ home.news_title }}</h2>
+    </div>
+    <div class="grid grid-3">{{ @news_latest }}</div>
+    <div class="actions"><a class="btn ghost arrow" href="{{ @prefix }}actualites.html">{{ home.news_all }}</a></div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ social.title }}</h2>
+      <p>{{ social.lead }}</p>
+    </div>
+    <div class="grid grid-4 channels">
+      <div class="card"><strong>{{ social.web }}</strong><p>{{ social.web_role_long }}</p></div>
+      <div class="card"><strong>Facebook</strong><p>{{ social.facebook_role_long }}</p></div>
+      <div class="card"><strong>Instagram</strong><p>{{ social.instagram_role_long }}</p></div>
+      <div class="card"><strong>LinkedIn</strong><p>{{ social.linkedin_role_long }}</p></div>
+    </div>
+  </div>
+</section>

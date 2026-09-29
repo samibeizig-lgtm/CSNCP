@@ -1,0 +1,8 @@
+[
+  {"initials": "PN", "name": {"fr": "Prénom Nom", "ar": "الاسم واللقب", "en": "First name Last name"}, "role": {"fr": "Président", "ar": "الرئيس", "en": "President"}},
+  {"initials": "PN", "name": {"fr": "Prénom Nom", "ar": "الاسم واللقب", "en": "First name Last name"}, "role": {"fr": "Vice-président", "ar": "نائب الرئيس", "en": "Vice-President"}},
+  {"initials": "PN", "name": {"fr": "Prénom Nom", "ar": "الاسم واللقب", "en": "First name Last name"}, "role": {"fr": "Secrétaire général", "ar": "الكاتب العام", "en": "Secretary General"}},
+  {"initials": "PN", "name": {"fr": "Prénom Nom", "ar": "الاسم واللقب", "en": "First name Last name"}, "role": {"fr": "Trésorier", "ar": "أمين المال", "en": "Treasurer"}},
+  {"initials": "PN", "name": {"fr": "Prénom Nom", "ar": "الاسم واللقب", "en": "First name Last name"}, "role": {"fr": "Membre du bureau", "ar": "عضو المكتب", "en": "Board member"}},
+  {"initials": "PN", "name": {"fr": "Prénom Nom", "ar": "الاسم واللقب", "en": "First name Last name"}, "role": {"fr": "Membre du bureau", "ar": "عضو المكتب", "en": "Board member"}}
+]

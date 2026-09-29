@@ -1,0 +1,40 @@
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">{{ site.short }}</p>
+    <h1>{{ patient.title }}</h1>
+    <p class="lead">{{ patient.lead }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <nav class="toc" aria-label="{{ ui.on_this_page }}">
+      <ul>
+        <li><a href="#droits">{{ patient.rights_title }}</a></li>
+        <li><a href="#facture">{{ patient.bill_title }}</a></li>
+        <li><a href="#prise-en-charge">{{ patient.cover_title }}</a></li>
+        <li><a href="#reclamation">{{ patient.claim_title }}</a></li>
+      </ul>
+    </nav>
+    <div class="prose-col">
+      <div class="block prose" id="droits">
+        <h2>{{ patient.rights_title }}</h2>
+        {{ patient.rights_html }}
+      </div>
+      <div class="block prose" id="facture">
+        <h2>{{ patient.bill_title }}</h2>
+        {{ patient.bill_html }}
+      </div>
+      <div class="block prose" id="prise-en-charge">
+        <h2>{{ patient.cover_title }}</h2>
+        {{ patient.cover_html }}
+      </div>
+      <div class="block prose" id="reclamation">
+        <h2>{{ patient.claim_title }}</h2>
+        {{ patient.claim_html }}
+        <p><a class="btn arrow" href="{{ @prefix }}contact.html?objet=reclamation">{{ patient.claim_cta }}</a></p>
+      </div>
+      <p class="note">{{ patient.disclaimer }}</p>
+    </div>
+  </div>
+</section>

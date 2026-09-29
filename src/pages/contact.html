@@ -1,0 +1,36 @@
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">{{ site.short }}</p>
+    <h1>{{ contact.title }}</h1>
+    <p class="lead">{{ contact.lead }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap grid grid-2" style="gap:48px">
+    <form class="form" id="contact-form" action="mailto:contact@csncp.tn" method="post" enctype="text/plain">
+      <label>{{ contact.subject }}
+        <select name="objet" id="objet">
+          <option value="information">{{ contact.s_info }}</option>
+          <option value="reclamation">{{ contact.s_claim }}</option>
+          <option value="adhesion">{{ contact.s_member }}</option>
+          <option value="presse">{{ contact.s_press }}</option>
+          <option value="voyage">{{ contact.s_travel }}</option>
+        </select>
+      </label>
+      <label>{{ contact.name }}<input name="nom" required autocomplete="name"></label>
+      <label>{{ contact.email }}<input name="email" type="email" required autocomplete="email"></label>
+      <label>{{ contact.phone }}<input name="telephone" type="tel" autocomplete="tel"></label>
+      <label>{{ contact.message }}<textarea name="message" required></textarea></label>
+      <p class="note">{{ contact.privacy }}</p>
+      <div><button class="btn" type="submit">{{ contact.send }}</button></div>
+    </form>
+    <div>
+      <div class="card">
+        <h3>{{ footer.contact }}</h3>
+        <address>{{ footer.address }}</address>
+      </div>
+      <div class="callout" style="margin-top:20px">{{ contact.claim_note }}</div>
+    </div>
+  </div>
+</section>

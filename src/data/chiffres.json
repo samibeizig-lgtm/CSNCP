@@ -1,0 +1,6 @@
+[
+  {"value": "XX", "fr": "cliniques privées adhérentes", "ar": "مصحة خاصة منخرطة", "en": "member private clinics"},
+  {"value": "XX XXX", "fr": "lits d'hospitalisation", "ar": "سرير استشفائي", "en": "hospital beds"},
+  {"value": "XX XXX", "fr": "emplois directs", "ar": "موطن شغل مباشر", "en": "direct jobs"},
+  {"value": "XXX XXX", "fr": "patients étrangers accueillis par an", "ar": "مريض أجنبي سنويا", "en": "international patients per year"}
+]

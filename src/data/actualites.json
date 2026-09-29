@@ -1,0 +1,118 @@
+[
+  {
+    "id": "lancement-site-officiel",
+    "date": "2026-09-28",
+    "type": "communique",
+    "fr": {
+      "title": "La CSNCP lance son site officiel et ses réseaux sociaux",
+      "summary": "Un site trilingue devient la source de référence de la Chambre ; Facebook, Instagram et LinkedIn y renvoient.",
+      "body": [
+        "La Chambre Syndicale Nationale des Cliniques Privées, affiliée à l'UTICA, met en ligne son site officiel en arabe, en français et en anglais.",
+        "Le site rassemble l'annuaire des cliniques adhérentes, un espace patient, les prises de position de la Chambre et un espace presse. Les pages Facebook, Instagram et LinkedIn de la Chambre y renvoient systématiquement pour toute information officielle."
+      ]
+    },
+    "ar": {
+      "title": "الغرفة تطلق موقعها الرسمي وصفحاتها على شبكات التواصل الاجتماعي",
+      "summary": "موقع بثلاث لغات يصبح المرجع الرسمي للغرفة، وتحيل إليه صفحات فيسبوك وإنستغرام ولينكدإن.",
+      "body": [
+        "تطلق الغرفة النقابية الوطنية للمصحات الخاصة، المنضوية تحت الاتحاد التونسي للصناعة والتجارة والصناعات التقليدية، موقعها الرسمي باللغات العربية والفرنسية والإنجليزية.",
+        "يضم الموقع دليل المصحات المنخرطة وفضاء المريض ومواقف الغرفة وفضاء الصحافة. وتحيل صفحات الغرفة على فيسبوك وإنستغرام ولينكدإن إلى الموقع في كل ما يتعلق بالمعلومة الرسمية."
+      ]
+    },
+    "en": {
+      "title": "CSNCP launches its official website and social media channels",
+      "summary": "A trilingual website becomes the Chamber's reference source; Facebook, Instagram and LinkedIn point back to it.",
+      "body": [
+        "The National Syndical Chamber of Private Clinics, a member body of UTICA, launches its official website in Arabic, French and English.",
+        "The site brings together the directory of member clinics, a patient section, the Chamber's positions and a press area. The Chamber's Facebook, Instagram and LinkedIn pages consistently link back to it for all official information."
+      ]
+    }
+  },
+  {
+    "id": "position-conventions-cnam",
+    "date": "2026-09-15",
+    "type": "position",
+    "fr": {
+      "title": "Conventions avec la CNAM : la Chambre appelle à une révision concertée",
+      "summary": "La CSNCP plaide pour une actualisation des tarifs conventionnels et une meilleure lisibilité pour les assurés.",
+      "body": [
+        "Contenu d'exemple — le texte définitif de la prise de position sera validé par le Bureau.",
+        "La Chambre rappelle son attachement à un dialogue régulier avec la Caisse nationale d'assurance maladie et les pouvoirs publics, dans l'intérêt des patients et de la pérennité des établissements."
+      ]
+    },
+    "ar": {
+      "title": "الاتفاقيات مع الصندوق الوطني للتأمين على المرض: الغرفة تدعو إلى مراجعة تشاركية",
+      "summary": "تدعو الغرفة إلى تحيين التعريفات التعاقدية وإلى مزيد الوضوح لفائدة المضمونين الاجتماعيين.",
+      "body": [
+        "محتوى على سبيل المثال — يصادق المكتب على النص النهائي للموقف.",
+        "تؤكد الغرفة تمسكها بحوار منتظم مع الصندوق الوطني للتأمين على المرض والسلط العمومية، خدمة لمصلحة المرضى واستمرارية المؤسسات."
+      ]
+    },
+    "en": {
+      "title": "CNAM agreements: the Chamber calls for a joint review",
+      "summary": "CSNCP advocates updated agreed tariffs and clearer information for insured patients.",
+      "body": [
+        "Sample content — the final wording of this position will be approved by the Board.",
+        "The Chamber reaffirms its commitment to regular dialogue with the National Health Insurance Fund (CNAM) and public authorities, in the interest of patients and of the long-term viability of clinics."
+      ]
+    }
+  },
+  {
+    "id": "nouvelle-identite-visuelle",
+    "date": "2026-09-05",
+    "type": "actualite",
+    "fr": {
+      "title": "La Chambre se dote d'une identité visuelle",
+      "summary": "Un logo qui place le patient au centre, entouré de six pétales figurant la diversité des cliniques.",
+      "body": [
+        "Au centre du nouveau logo, une silhouette bleue s'élance, bras levés : le patient qui se relève, guérit et retrouve confiance.",
+        "Autour de lui, six pétales colorés figurent les cliniques, leurs spécialités et leurs régions. Ensemble, ils forment une fleur qui s'épanouit."
+      ]
+    },
+    "ar": {
+      "title": "الغرفة تعتمد هوية بصرية جديدة",
+      "summary": "شعار يضع المريض في المركز، تحيط به ست بتلات ترمز إلى تنوع المصحات.",
+      "body": [
+        "في قلب الشعار الجديد، صورة زرقاء لشخص يرفع ذراعيه: المريض الذي ينهض ويتعافى ويستعيد ثقته.",
+        "وحوله ست بتلات ملونة ترمز إلى المصحات واختصاصاتها وجهاتها، لتشكل معا زهرة متفتحة."
+      ]
+    },
+    "en": {
+      "title": "The Chamber adopts a visual identity",
+      "summary": "A logo that puts the patient at the centre, surrounded by six petals representing the diversity of clinics.",
+      "body": [
+        "At the heart of the new logo, a blue figure rises with arms raised: the patient getting back up, healing and regaining confidence.",
+        "Around it, six coloured petals represent the clinics, their specialties and their regions. Together they form a blossoming flower."
+      ]
+    }
+  },
+  {
+    "id": "journee-nationale-patient",
+    "date": "2026-07-10",
+    "type": "communique",
+    "fr": {
+      "title": "Journée nationale : « Le patient au cœur de nos cliniques »",
+      "summary": "Les cliniques adhérentes ouvrent leurs portes pour présenter leurs démarches qualité et d'accueil.",
+      "body": [
+        "Contenu d'exemple — date, programme et établissements participants à confirmer.",
+        "Cette journée vise à mieux faire connaître au public les droits du patient, les démarches de prise en charge et les engagements qualité des établissements adhérents."
+      ]
+    },
+    "ar": {
+      "title": "اليوم الوطني: «المريض في قلب مصحاتنا»",
+      "summary": "المصحات المنخرطة تفتح أبوابها للتعريف بمساعي الجودة وحسن الاستقبال.",
+      "body": [
+        "محتوى على سبيل المثال — يتم تأكيد التاريخ والبرنامج والمؤسسات المشاركة لاحقا.",
+        "يهدف هذا اليوم إلى تعريف العموم بحقوق المريض وإجراءات التكفل والتزامات الجودة لدى المؤسسات المنخرطة."
+      ]
+    },
+    "en": {
+      "title": "National Day: “Patients at the heart of our clinics”",
+      "summary": "Member clinics open their doors to present their quality and patient-care initiatives.",
+      "body": [
+        "Sample content — date, programme and participating clinics to be confirmed.",
+        "The day aims to raise public awareness of patients' rights, coverage procedures and the quality commitments of member clinics."
+      ]
+    }
+  }
+]

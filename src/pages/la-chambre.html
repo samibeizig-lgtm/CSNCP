@@ -1,0 +1,52 @@
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">{{ site.short }}</p>
+    <h1>{{ chamber.title }}</h1>
+    <p class="lead">{{ chamber.lead }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <nav class="toc" aria-label="{{ ui.on_this_page }}">
+      <ul>
+        <li><a href="#mission">{{ chamber.mission_title }}</a></li>
+        <li><a href="#bureau">{{ chamber.board_title }}</a></li>
+        <li><a href="#statuts">{{ chamber.statutes_title }}</a></li>
+        <li><a href="#historique">{{ chamber.history_title }}</a></li>
+      </ul>
+    </nav>
+    <div>
+      <div class="block" id="mission">
+        <h2>{{ chamber.mission_title }}</h2>
+        <p class="lead">{{ chamber.mission_lead }}</p>
+        <div class="grid grid-2">
+          <div class="card"><div class="dot c1"></div><h3>{{ chamber.m1_title }}</h3><p>{{ chamber.m1 }}</p></div>
+          <div class="card"><div class="dot c2"></div><h3>{{ chamber.m2_title }}</h3><p>{{ chamber.m2 }}</p></div>
+          <div class="card"><div class="dot c4"></div><h3>{{ chamber.m3_title }}</h3><p>{{ chamber.m3 }}</p></div>
+          <div class="card"><div class="dot c5"></div><h3>{{ chamber.m4_title }}</h3><p>{{ chamber.m4 }}</p></div>
+        </div>
+      </div>
+
+      <div class="block" id="bureau">
+        <h2>{{ chamber.board_title }}</h2>
+        <p>{{ chamber.board_lead }}</p>
+        <ul class="members">{{ @board }}</ul>
+      </div>
+
+      <div class="block prose" id="statuts">
+        <h2>{{ chamber.statutes_title }}</h2>
+        {{ chamber.statutes_html }}
+        <ul class="downloads">
+          <li><a href="{{ @root }}assets/docs/">{{ chamber.statutes_doc }}</a><span>PDF</span></li>
+          <li><a href="{{ @root }}assets/docs/">{{ chamber.ri_doc }}</a><span>PDF</span></li>
+        </ul>
+      </div>
+
+      <div class="block" id="historique">
+        <h2>{{ chamber.history_title }}</h2>
+        {{ chamber.history_html }}
+      </div>
+    </div>
+  </div>
+</section>

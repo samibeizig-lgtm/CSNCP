@@ -1,0 +1,32 @@
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">{{ site.short }}</p>
+    <h1>{{ directory.title }}</h1>
+    <p class="lead">{{ directory.lead }}</p>
+    <span class="demo-flag">{{ directory.demo }}</span>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <form class="dir-tools" role="search" onsubmit="return false">
+      <label>{{ directory.search }}<input type="search" id="q" placeholder="{{ directory.search_ph }}" autocomplete="off"></label>
+      <label>{{ directory.region }}<select id="region"><option value="">{{ directory.all }}</option></select></label>
+      <label>{{ directory.specialty }}<select id="spec"><option value="">{{ directory.all_f }}</option></select></label>
+    </form>
+    <div class="dir-layout">
+      <div>
+        <p class="dir-count" id="count" aria-live="polite"></p>
+        <div class="dir-list" id="list"></div>
+      </div>
+      <div id="map" role="region" aria-label="{{ directory.map }}"></div>
+    </div>
+    <div class="callout" style="margin-top:32px">{{ directory.join }}</div>
+  </div>
+</section>
+
+<script id="clinics-data" type="application/json">{{ @clinics_json }}</script>
+<script id="dir-i18n" type="application/json">{{ @i18n_json }}</script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
+<script src="{{ @root }}assets/js/annuaire.js" defer></script>

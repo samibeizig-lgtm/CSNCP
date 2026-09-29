@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Annuaire des cliniques adhérentes · CSNCP</title>
+<meta name="description" content="Trouvez une clinique privée adhérente en Tunisie par région et spécialité, avec carte et contacts.">
+<link rel="canonical" href="https://www.csncp.tn/fr/annuaire.html">
+<link rel="alternate" hreflang="fr" href="https://www.csncp.tn/fr/annuaire.html">
+<link rel="alternate" hreflang="ar" href="https://www.csncp.tn/ar/annuaire.html">
+<link rel="alternate" hreflang="en" href="https://www.csncp.tn/en/annuaire.html">
+<link rel="alternate" hreflang="x-default" href="https://www.csncp.tn/fr/annuaire.html">
+<meta property="og:title" content="Annuaire des cliniques adhérentes · CSNCP">
+<meta property="og:description" content="Trouvez une clinique privée adhérente en Tunisie par région et spécialité, avec carte et contacts.">
+<meta property="og:image" content="https://www.csncp.tn/assets/img/logo-vertical.png">
+<meta property="og:locale" content="fr_TN">
+<meta name="theme-color" content="#035FCA">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/img/favicon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Montserrat:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="annuaire">
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <span>Chambre membre de l'UTICA — Union Tunisienne de l'Industrie, du Commerce et de l'Artisanat</span>
+    <nav class="langs" aria-label="Langue"><a href="../fr/annuaire.html" hreflang="fr" lang="fr" title="Français" aria-current="true">FR</a>
+<a href="../ar/annuaire.html" hreflang="ar" lang="ar" title="العربية">ع</a>
+<a href="../en/annuaire.html" hreflang="en" lang="en" title="English">EN</a></nav>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../fr/index.html" aria-label="Chambre Syndicale Nationale des Cliniques Privées — Accueil">
+      <img src="../assets/img/logo-horizontal.png" width="800" height="332" alt="CSNCP — Chambre Syndicale Nationale des Cliniques Privées">
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu">
+      <span class="bars" aria-hidden="true"></span><span class="sr">Menu</span>
+    </button>
+    <nav id="menu" class="main-nav" aria-label="Navigation principale">
+      <ul><li><a href="../fr/la-chambre.html">La Chambre</a></li>
+<li><a href="../fr/annuaire.html" aria-current="page">Annuaire des cliniques</a></li>
+<li><a href="../fr/espace-patient.html">Espace patient</a></li>
+<li><a href="../fr/actualites.html">Actualités</a></li>
+<li><a href="../fr/presse.html">Presse</a></li>
+<li><a href="../fr/medecine-de-voyage.html">Médecine de voyage</a></li></ul>
+    </nav>
+  </div>
+  <div class="petals-bar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</header>
+
+<main id="contenu">
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">CSNCP</p>
+    <h1>Annuaire des cliniques adhérentes</h1>
+    <p class="lead">Recherchez une clinique privée membre de la Chambre par nom, région ou spécialité.</p>
+    <span class="demo-flag">Données de démonstration — liste officielle à intégrer</span>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <form class="dir-tools" role="search" onsubmit="return false">
+      <label>Rechercher<input type="search" id="q" placeholder="Nom, ville…" autocomplete="off"></label>
+      <label>Gouvernorat<select id="region"><option value="">Tous</option></select></label>
+      <label>Spécialité<select id="spec"><option value="">Toutes</option></select></label>
+    </form>
+    <div class="dir-layout">
+      <div>
+        <p class="dir-count" id="count" aria-live="polite"></p>
+        <div class="dir-list" id="list"></div>
+      </div>
+      <div id="map" role="region" aria-label="Carte des cliniques"></div>
+    </div>
+    <div class="callout" style="margin-top:32px">Vous dirigez une clinique privée ? <a href="contact.html?objet=adhesion">Demandez votre adhésion à la Chambre</a>.</div>
+  </div>
+</section>
+
+<script id="clinics-data" type="application/json">[{"id": "demo-01", "name": "Clinique exemple — Tunis Centre", "region": "tunis", "city": "Tunis", "address": "Adresse à compléter, Tunis", "lat": 36.8065, "lng": 10.1815, "specialties": ["chirurgie", "cardiologie", "imagerie", "urgences"], "phone": "+216 71 000 000", "email": "contact@exemple.tn", "web": ""}, {"id": "demo-02", "name": "Clinique exemple — Les Berges du Lac", "region": "tunis", "city": "Tunis", "address": "Adresse à compléter, Tunis", "lat": 36.838, "lng": 10.238, "specialties": ["oncologie", "chirurgie", "imagerie"], "phone": "+216 71 000 001", "email": "contact@exemple.tn", "web": ""}, {"id": "demo-03", "name": "Clinique exemple — Ariana", "region": "ariana", "city": "Ariana", "address": "Adresse à compléter, Ariana", "lat": 36.8625, "lng": 10.1956, "specialties": ["maternite", "pediatrie", "fertilite"], "phone": "+216 70 000 002", "email": "contact@exemple.tn", "web": ""}, {"id": "demo-04", "name": "Clinique exemple — Ben Arous", "region": "benarous", "city": "Ben Arous", "address": "Adresse à compléter, Ben Arous", "lat": 36.7531, "lng": 10.2189, "specialties": ["orthopedie", "chirurgie", "dialyse"], "phone": "+216 79 000 003", "email": "contact@exemple.tn", "web": ""}, {"id": "demo-05", "name": "Clinique exemple — Sousse", "region": "sousse", "city": "Sousse", "address": "Adresse à compléter, Sousse", "lat": 35.8256, "lng": 10.636, "specialties": ["ophtalmologie", "esthetique", "chirurgie"], "phone": "+216 73 000 004", "email": "contact@exemple.tn", "web": ""}, {"id": "demo-06", "name": "Clinique exemple — Monastir", "region": "monastir", "city": "Monastir", "address": "Adresse à compléter, Monastir", "lat": 35.7643, "lng": 10.8113, "specialties": ["cardiologie", "urgences", "imagerie"], "phone": "+216 73 000 005", "email": "contact@exemple.tn", "web": ""}, {"id": "demo-07", "name": "Clinique exemple — Sfax", "region": "sfax", "city": "Sfax", "address": "Adresse à compléter, Sfax", "lat": 34.7406, "lng": 10.7603, "specialties": ["chirurgie", "maternite", "oncologie", "urgences"], "phone": "+216 74 000 006", "email": "contact@exemple.tn", "web": ""}, {"id": "demo-08", "name": "Clinique exemple — Nabeul", "region": "nabeul", "city": "Hammamet", "address": "Adresse à compléter, Hammamet", "lat": 36.4, "lng": 10.6167, "specialties": ["esthetique", "orthopedie"], "phone": "+216 72 000 007", "email": "contact@exemple.tn", "web": ""}, {"id": "demo-09", "name": "Clinique exemple — Bizerte", "region": "bizerte", "city": "Bizerte", "address": "Adresse à compléter, Bizerte", "lat": 37.2744, "lng": 9.8739, "specialties": ["maternite", "pediatrie", "chirurgie"], "phone": "+216 72 000 008", "email": "contact@exemple.tn", "web": ""}, {"id": "demo-10", "name": "Clinique exemple — Djerba", "region": "medenine", "city": "Djerba", "address": "Adresse à compléter, Djerba", "lat": 33.8076, "lng": 10.8451, "specialties": ["dialyse", "urgences", "imagerie"], "phone": "+216 75 000 009", "email": "contact@exemple.tn", "web": ""}, {"id": "demo-11", "name": "Clinique exemple — Gabès", "region": "gabes", "city": "Gabès", "address": "Adresse à compléter, Gabès", "lat": 33.8815, "lng": 10.0982, "specialties": ["chirurgie", "maternite"], "phone": "+216 75 000 010", "email": "contact@exemple.tn", "web": ""}]</script>
+<script id="dir-i18n" type="application/json">{"title": "Annuaire des cliniques adhérentes", "lead": "Recherchez une clinique privée membre de la Chambre par nom, région ou spécialité.", "demo": "Données de démonstration — liste officielle à intégrer", "search": "Rechercher", "search_ph": "Nom, ville…", "region": "Gouvernorat", "specialty": "Spécialité", "all": "Tous", "all_f": "Toutes", "map": "Carte des cliniques", "join": "Vous dirigez une clinique privée ? <a href=\"contact.html?objet=adhesion\">Demandez votre adhésion à la Chambre<\/a>.", "count_one": "1 clinique", "count_many": "{n} cliniques", "none": "Aucune clinique ne correspond à votre recherche.", "locate": "Voir sur la carte", "phone": "Tél.", "email": "E-mail", "web": "Site web", "regions": {"tunis": "Tunis", "ariana": "Ariana", "benarous": "Ben Arous", "nabeul": "Nabeul", "bizerte": "Bizerte", "sousse": "Sousse", "monastir": "Monastir", "sfax": "Sfax", "gabes": "Gabès", "medenine": "Médenine"}, "specialties": {"chirurgie": "Chirurgie générale", "cardiologie": "Cardiologie", "maternite": "Maternité", "oncologie": "Oncologie", "ophtalmologie": "Ophtalmologie", "orthopedie": "Orthopédie", "esthetique": "Chirurgie esthétique", "dialyse": "Hémodialyse", "pediatrie": "Pédiatrie", "urgences": "Urgences 24h/24", "imagerie": "Imagerie médicale", "fertilite": "Procréation assistée"}}</script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
+<script src="../assets/js/annuaire.js" defer></script>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="../assets/img/logo-vertical-white.png" width="560" height="743" alt="CSNCP">
+      <p>Chambre Syndicale Nationale des Cliniques Privées — <span lang="ar" dir="rtl">الغرفة النقابية الوطنية للمصحات الخاصة</span>. Membre de l'UTICA.</p>
+    </div>
+    <div>
+      <h2>Rubriques</h2>
+      <ul class="footer-links"><li><a href="../fr/la-chambre.html">La Chambre</a></li>
+<li><a href="../fr/annuaire.html" aria-current="page">Annuaire des cliniques</a></li>
+<li><a href="../fr/espace-patient.html">Espace patient</a></li>
+<li><a href="../fr/actualites.html">Actualités</a></li>
+<li><a href="../fr/presse.html">Presse</a></li>
+<li><a href="../fr/medecine-de-voyage.html">Médecine de voyage</a></li><li><a href="../fr/contact.html">Contact</a></li></ul>
+    </div>
+    <div>
+      <h2>Nous joindre</h2>
+      <address>CSNCP — Siège de l'UTICA<br>Tunis, Tunisie<br>Tél. : +216 XX XXX XXX<br><a href="mailto:contact@csncp.tn">contact@csncp.tn</a></address>
+    </div>
+    <div>
+      <h2>Suivez-nous</h2>
+      <ul class="social">
+        <li><a href="https://www.facebook.com/" rel="noopener">Facebook</a><span>Grand public et patients</span></li>
+        <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a><span>Image et prévention</span></li>
+        <li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a><span>Institutionnel et partenaires</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 CSNCP · Membre de l'UTICA</span>
+    <span>Le site web est la source officielle des informations de la Chambre.</span>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

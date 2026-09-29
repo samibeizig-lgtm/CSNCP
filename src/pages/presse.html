@@ -1,0 +1,50 @@
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">{{ site.short }}</p>
+    <h1>{{ press.title }}</h1>
+    <p class="lead">{{ press.lead }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <nav class="toc" aria-label="{{ ui.on_this_page }}">
+      <ul>
+        <li><a href="#communiques">{{ press.releases }}</a></li>
+        <li><a href="#chiffres">{{ figures.title }}</a></li>
+        <li><a href="#kit">{{ press.kit }}</a></li>
+        <li><a href="#contact-presse">{{ press.contact }}</a></li>
+      </ul>
+    </nav>
+    <div>
+      <div class="block" id="communiques">
+        <h2>{{ press.releases }}</h2>
+        <div class="grid grid-2">{{ @news_press }}</div>
+      </div>
+      <div class="block" id="chiffres">
+        <h2>{{ figures.title }}</h2>
+        <div class="figures">{{ @figures }}</div>
+        <p class="note">{{ figures.note }}</p>
+      </div>
+      <div class="block" id="kit">
+        <h2>{{ press.kit }}</h2>
+        <p>{{ press.kit_lead }}</p>
+        <ul class="downloads">
+          <li><a href="{{ @root }}assets/img/logo-vertical.png" download>{{ press.dl_vertical }}</a><span>PNG</span></li>
+          <li><a href="{{ @root }}assets/img/logo-horizontal.png" download>{{ press.dl_horizontal }}</a><span>PNG</span></li>
+          <li><a href="{{ @root }}assets/img/logo-vertical-white.png" download>{{ press.dl_white }}</a><span>PNG</span></li>
+          <li><a href="{{ @root }}assets/img/logo-mono.png" download>{{ press.dl_mono }}</a><span>PNG</span></li>
+          <li><a href="{{ @root }}assets/img/symbole.png" download>{{ press.dl_symbol }}</a><span>PNG</span></li>
+          <li><a href="{{ @root }}assets/docs/CSNCP_Charte_graphique.pdf" download>{{ press.dl_charter }}</a><span>PDF</span></li>
+        </ul>
+        <p class="note">{{ press.kit_rules }}</p>
+      </div>
+      <div class="block" id="contact-presse">
+        <h2>{{ press.contact }}</h2>
+        <div class="card">
+          <p>{{ press.contact_html }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

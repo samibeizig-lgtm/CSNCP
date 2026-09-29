@@ -1,0 +1,44 @@
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">{{ travel.eyebrow }}</p>
+    <h1>{{ travel.title }}</h1>
+    <p class="lead">{{ travel.lead }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>{{ travel.why_title }}</h2></div>
+    <div class="grid grid-2">
+      <div class="card feature"><div class="dot c1"></div><div><h3>{{ travel.w1_title }}</h3><p>{{ travel.w1 }}</p></div></div>
+      <div class="card feature"><div class="dot c2"></div><div><h3>{{ travel.w2_title }}</h3><p>{{ travel.w2 }}</p></div></div>
+      <div class="card feature"><div class="dot c3"></div><div><h3>{{ travel.w3_title }}</h3><p>{{ travel.w3 }}</p></div></div>
+      <div class="card feature"><div class="dot c4"></div><div><h3>{{ travel.w4_title }}</h3><p>{{ travel.w4 }}</p></div></div>
+      <div class="card feature"><div class="dot c5"></div><div><h3>{{ travel.w5_title }}</h3><p>{{ travel.w5 }}</p></div></div>
+      <div class="card feature"><div class="dot c6"></div><div><h3>{{ travel.w6_title }}</h3><p>{{ travel.w6 }}</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap grid grid-2" style="gap:48px">
+    <div>
+      <h2>{{ travel.spec_title }}</h2>
+      <ul class="checklist">{{ travel.spec_html }}</ul>
+    </div>
+    <div>
+      <h2>{{ travel.steps_title }}</h2>
+      <ol class="steps">{{ travel.steps_html }}</ol>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="callout warm prose" style="max-width:none">{{ travel.advice_html }}</div>
+    <div class="actions">
+      <a class="btn arrow" href="{{ @prefix }}annuaire.html">{{ travel.cta_directory }}</a>
+      <a class="btn ghost" href="{{ @prefix }}contact.html?objet=voyage">{{ travel.cta_contact }}</a>
+    </div>
+  </div>
+</section>

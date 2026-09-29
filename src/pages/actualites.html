@@ -1,0 +1,19 @@
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">{{ site.short }}</p>
+    <h1>{{ news.title }}</h1>
+    <p class="lead">{{ news.lead }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="filters" role="group" aria-label="{{ news.filter }}">
+      <button class="chip" aria-pressed="true" data-filter="">{{ news.all }}</button>
+      <button class="chip" aria-pressed="false" data-filter="actualite">{{ news.types.actualite }}</button>
+      <button class="chip" aria-pressed="false" data-filter="position">{{ news.types.position }}</button>
+      <button class="chip" aria-pressed="false" data-filter="communique">{{ news.types.communique }}</button>
+    </div>
+    <div class="grid grid-3" id="news-list">{{ @news_all }}</div>
+  </div>
+</section>

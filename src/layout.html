@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="{{ @lang }}" dir="{{ @dir }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ @title }}</title>
+<meta name="description" content="{{ @description }}">
+<link rel="canonical" href="{{ @canonical }}">
+{{ @hreflang }}
+<meta property="og:title" content="{{ @title }}">
+<meta property="og:description" content="{{ @description }}">
+<meta property="og:image" content="https://www.csncp.tn/assets/img/logo-vertical.png">
+<meta property="og:locale" content="{{ site.locale }}">
+<meta name="theme-color" content="#035FCA">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ @root }}assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="{{ @root }}assets/img/favicon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Montserrat:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="{{ @root }}assets/css/style.css">
+</head>
+<body data-page="{{ @slug }}">
+<a class="skip" href="#contenu">{{ ui.skip }}</a>
+
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <span>{{ site.utica }}</span>
+    <nav class="langs" aria-label="{{ ui.language }}">{{ @lang_switch }}</nav>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ @prefix }}index.html" aria-label="{{ site.name }} — {{ ui.home }}">
+      <img src="{{ @root }}assets/img/logo-horizontal.png" width="800" height="332" alt="CSNCP — {{ site.name }}">
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu">
+      <span class="bars" aria-hidden="true"></span><span class="sr">{{ ui.menu }}</span>
+    </button>
+    <nav id="menu" class="main-nav" aria-label="{{ ui.main_nav }}">
+      <ul>{{ @nav }}</ul>
+    </nav>
+  </div>
+  <div class="petals-bar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</header>
+
+<main id="contenu">
+{{ @content }}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="{{ @root }}assets/img/logo-vertical-white.png" width="560" height="743" alt="CSNCP">
+      <p>{{ footer.about }}</p>
+    </div>
+    <div>
+      <h2>{{ footer.nav }}</h2>
+      <ul class="footer-links">{{ @nav }}<li><a href="{{ @prefix }}contact.html">{{ nav.contact }}</a></li></ul>
+    </div>
+    <div>
+      <h2>{{ footer.contact }}</h2>
+      <address>{{ footer.address }}</address>
+    </div>
+    <div>
+      <h2>{{ footer.follow }}</h2>
+      <ul class="social">
+        <li><a href="https://www.facebook.com/" rel="noopener">Facebook</a><span>{{ social.facebook_role }}</span></li>
+        <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a><span>{{ social.instagram_role }}</span></li>
+        <li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a><span>{{ social.linkedin_role }}</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© {{ @year }} CSNCP · {{ site.utica_short }}</span>
+    <span>{{ footer.official }}</span>
+  </div>
+</footer>
+
+<script src="{{ @root }}assets/js/main.js" defer></script>
+</body>
+</html>

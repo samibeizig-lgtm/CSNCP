@@ -1,0 +1,14 @@
+<section class="page-hero">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="{{ @prefix }}actualites.html">{{ nav.actualites }}</a></p>
+    <p class="eyebrow"><span class="tag tag-{{ @a_type_key }}">{{ @a_type }}</span><time datetime="{{ @a_iso }}">{{ @a_date }}</time></p>
+    <h1>{{ @a_title }}</h1>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap article">
+    {{ @a_body }}
+    <p class="note">{{ news.demo }}</p>
+    <div class="actions"><a class="btn ghost" href="{{ @prefix }}actualites.html">{{ news.back }}</a></div>
+  </div>
+</section>
