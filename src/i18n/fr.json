@@ -3,8 +3,10 @@
     "name": "Chambre Syndicale Nationale des Cliniques Privées",
     "short": "CSNCP",
     "locale": "fr_TN",
-    "utica": "Chambre membre de l'UTICA — Union Tunisienne de l'Industrie, du Commerce et de l'Artisanat",
-    "utica_short": "Membre de l'UTICA"
+    "utica": "Membre de l'<a href=\"https://www.utica.org.tn/\" rel=\"noopener\">UTICA</a> et de la <a href=\"https://www.fedsante.com.tn/chambres/chambre-syndicale-nationale-des-cliniques-privees/\" rel=\"noopener\">Fédération nationale de la santé</a>",
+    "utica_short": "Membre de l'UTICA et de la Fédération nationale de la santé",
+    "name_fr": "Chambre Syndicale Nationale des Cliniques Privées",
+    "name_ar": "الغرفة النقابية الوطنية للمصحات الخاصة"
   },
   "months": [
     "janvier",
@@ -41,7 +43,7 @@
   "meta": {
     "index": {
       "title": "CSNCP — Chambre Syndicale Nationale des Cliniques Privées",
-      "description": "Site officiel de la Chambre Syndicale Nationale des Cliniques Privées de Tunisie, membre de l'UTICA : annuaire des cliniques, espace patient, actualités et presse."
+      "description": "Site officiel de la Chambre Syndicale Nationale des Cliniques Privées de Tunisie, membre de l'UTICA et de la Fédération nationale de la santé : annuaire des cliniques, espace patient, actualités et presse."
     },
     "la-chambre": {
       "title": "La Chambre",
@@ -107,7 +109,7 @@
   },
   "chamber": {
     "title": "La Chambre",
-    "lead": "Structure professionnelle affiliée à l'UTICA, la Chambre fédère les cliniques privées de Tunisie autour d'une ambition commune : un soin de qualité, accessible et digne de confiance.",
+    "lead": "Structure professionnelle membre de l'UTICA et de la Fédération nationale de la santé, la Chambre fédère les cliniques privées de Tunisie autour d'une ambition commune : un soin de qualité, accessible et digne de confiance.",
     "mission_title": "Mission",
     "mission_lead": "Représenter la profession, défendre ses intérêts et contribuer, aux côtés des pouvoirs publics, à la qualité du système de santé tunisien.",
     "m1_title": "Représenter",
@@ -121,7 +123,7 @@
     "board_title": "Bureau exécutif",
     "board_lead": "Le bureau exécutif est élu par l'assemblée générale des adhérents. Composition à compléter.",
     "statutes_title": "Statuts",
-    "statutes_html": "<p>La Chambre est régie par ses statuts et son règlement intérieur, dans le cadre des statuts de l'UTICA. Peut adhérer tout établissement de santé privé autorisé exerçant en Tunisie.</p>",
+    "statutes_html": "<p>La Chambre est régie par ses statuts et son règlement intérieur, dans le cadre des statuts de l'UTICA et de la Fédération nationale de la santé. Peut adhérer tout établissement de santé privé autorisé exerçant en Tunisie.</p>",
     "statutes_doc": "Statuts de la Chambre",
     "ri_doc": "Règlement intérieur",
     "history_title": "Historique",
@@ -260,7 +262,7 @@
     "claim_note": "Pour une réclamation, précisez le nom de la clinique, les dates de séjour et joignez vos échanges avec l'établissement."
   },
   "footer": {
-    "about": "Chambre Syndicale Nationale des Cliniques Privées — <span lang=\"ar\" dir=\"rtl\">الغرفة النقابية الوطنية للمصحات الخاصة</span>. Membre de l'UTICA.",
+    "about": "Chambre Syndicale Nationale des Cliniques Privées — <span lang=\"ar\" dir=\"rtl\">الغرفة النقابية الوطنية للمصحات الخاصة</span>. Membre de l'UTICA et de la Fédération nationale de la santé.",
     "nav": "Rubriques",
     "contact": "Nous joindre",
     "address": "CSNCP — Siège de l'UTICA<br>Tunis, Tunisie<br>Tél. : +216 XX XXX XXX<br><a href=\"mailto:contact@csncp.tn\">contact@csncp.tn</a>",

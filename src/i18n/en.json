@@ -3,8 +3,10 @@
     "name": "National Syndical Chamber of Private Clinics",
     "short": "CSNCP",
     "locale": "en_GB",
-    "utica": "Member chamber of UTICA — Tunisian Union of Industry, Commerce and Handicrafts",
-    "utica_short": "Member of UTICA"
+    "utica": "Member of <a href=\"https://www.utica.org.tn/\" rel=\"noopener\">UTICA</a> and of the <a href=\"https://www.fedsante.com.tn/chambres/chambre-syndicale-nationale-des-cliniques-privees/\" rel=\"noopener\">National Health Federation</a>",
+    "utica_short": "Member of UTICA and the National Health Federation",
+    "name_fr": "Chambre Syndicale Nationale des Cliniques Privées",
+    "name_ar": "الغرفة النقابية الوطنية للمصحات الخاصة"
   },
   "months": [
     "January",
@@ -41,7 +43,7 @@
   "meta": {
     "index": {
       "title": "CSNCP — National Syndical Chamber of Private Clinics",
-      "description": "Official website of the National Syndical Chamber of Private Clinics of Tunisia, a member of UTICA: clinic directory, patient information, news and press."
+      "description": "Official website of the National Syndical Chamber of Private Clinics of Tunisia, a member of UTICA and the National Health Federation: clinic directory, patient information, news and press."
     },
     "la-chambre": {
       "title": "The Chamber",
@@ -107,7 +109,7 @@
   },
   "chamber": {
     "title": "The Chamber",
-    "lead": "A professional body affiliated with UTICA, the Chamber brings Tunisia's private clinics together around a shared ambition: quality care that is accessible and trustworthy.",
+    "lead": "A professional body belonging to UTICA and the National Health Federation, the Chamber brings Tunisia's private clinics together around a shared ambition: quality care that is accessible and trustworthy.",
     "mission_title": "Mission",
     "mission_lead": "Represent the profession, defend its interests and contribute, alongside public authorities, to the quality of the Tunisian health system.",
     "m1_title": "Represent",
@@ -121,7 +123,7 @@
     "board_title": "Executive board",
     "board_lead": "The executive board is elected by the general assembly of members. Composition to be completed.",
     "statutes_title": "Statutes",
-    "statutes_html": "<p>The Chamber is governed by its statutes and internal rules, within the framework of UTICA's statutes. Any licensed private healthcare facility operating in Tunisia may join.</p>",
+    "statutes_html": "<p>The Chamber is governed by its statutes and internal rules, within the framework of the statutes of UTICA and the National Health Federation. Any licensed private healthcare facility operating in Tunisia may join.</p>",
     "statutes_doc": "Statutes of the Chamber",
     "ri_doc": "Internal rules",
     "history_title": "History",
@@ -260,7 +262,7 @@
     "claim_note": "For a complaint, please state the clinic's name and the dates of your stay, and attach your correspondence with the facility."
   },
   "footer": {
-    "about": "National Syndical Chamber of Private Clinics — <span lang=\"fr\">Chambre Syndicale Nationale des Cliniques Privées</span>. Member of UTICA.",
+    "about": "National Syndical Chamber of Private Clinics — <span lang=\"fr\">Chambre Syndicale Nationale des Cliniques Privées</span>. Member of UTICA and the National Health Federation.",
     "nav": "Sections",
     "contact": "Get in touch",
     "address": "CSNCP — UTICA headquarters<br>Tunis, Tunisia<br>Tel.: +216 XX XXX XXX<br><a href=\"mailto:contact@csncp.tn\">contact@csncp.tn</a>",
