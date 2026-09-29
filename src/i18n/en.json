@@ -6,7 +6,20 @@
     "utica": "Member chamber of UTICA — Tunisian Union of Industry, Commerce and Handicrafts",
     "utica_short": "Member of UTICA"
   },
-  "months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+  "months": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
   "ui": {
     "skip": "Skip to content",
     "language": "Language",
@@ -26,14 +39,38 @@
     "contact": "Contact"
   },
   "meta": {
-    "index": {"title": "CSNCP — National Syndical Chamber of Private Clinics", "description": "Official website of the National Syndical Chamber of Private Clinics of Tunisia, a member of UTICA: clinic directory, patient information, news and press."},
-    "la-chambre": {"title": "The Chamber", "description": "Mission, executive board, statutes and history of CSNCP."},
-    "annuaire": {"title": "Member clinic directory", "description": "Find a member private clinic in Tunisia by region and specialty, with map and contact details."},
-    "espace-patient": {"title": "Patients", "description": "Patients' rights, understanding your bill, CNAM and insurance coverage, how to file a complaint."},
-    "actualites": {"title": "News and positions", "description": "News, press releases and positions of CSNCP."},
-    "presse": {"title": "Press", "description": "Press releases, key figures, media kit and press contact of CSNCP."},
-    "medecine-de-voyage": {"title": "Medical travel", "description": "Why get treatment in Tunisia: quality, proximity, hospitality and support in private clinics."},
-    "contact": {"title": "Contact", "description": "Contact the National Syndical Chamber of Private Clinics."}
+    "index": {
+      "title": "CSNCP — National Syndical Chamber of Private Clinics",
+      "description": "Official website of the National Syndical Chamber of Private Clinics of Tunisia, a member of UTICA: clinic directory, patient information, news and press."
+    },
+    "la-chambre": {
+      "title": "The Chamber",
+      "description": "Mission, executive board, statutes and history of CSNCP."
+    },
+    "annuaire": {
+      "title": "Member clinic directory",
+      "description": "Find a member private clinic in Tunisia by region and specialty, with map and contact details."
+    },
+    "espace-patient": {
+      "title": "Patients",
+      "description": "Patients' rights, understanding your bill, CNAM and insurance coverage, how to file a complaint."
+    },
+    "actualites": {
+      "title": "News and positions",
+      "description": "News, press releases and positions of CSNCP."
+    },
+    "presse": {
+      "title": "Press",
+      "description": "Press releases, key figures, media kit and press contact of CSNCP."
+    },
+    "medecine-de-voyage": {
+      "title": "Medical travel",
+      "description": "Why get treatment in Tunisia: quality, proximity, hospitality and support in private clinics."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contact the National Syndical Chamber of Private Clinics."
+    }
   },
   "home": {
     "eyebrow": "Official website · Tunisia",
@@ -110,13 +147,30 @@
     "email": "Email",
     "web": "Website",
     "regions": {
-      "tunis": "Tunis", "ariana": "Ariana", "benarous": "Ben Arous", "nabeul": "Nabeul", "bizerte": "Bizerte",
-      "sousse": "Sousse", "monastir": "Monastir", "sfax": "Sfax", "gabes": "Gabès", "medenine": "Medenine"
+      "tunis": "Tunis",
+      "ariana": "Ariana",
+      "benarous": "Ben Arous",
+      "nabeul": "Nabeul",
+      "bizerte": "Bizerte",
+      "sousse": "Sousse",
+      "monastir": "Monastir",
+      "sfax": "Sfax",
+      "gabes": "Gabès",
+      "medenine": "Medenine"
     },
     "specialties": {
-      "chirurgie": "General surgery", "cardiologie": "Cardiology", "maternite": "Maternity", "oncologie": "Oncology",
-      "ophtalmologie": "Ophthalmology", "orthopedie": "Orthopaedics", "esthetique": "Cosmetic surgery", "dialyse": "Haemodialysis",
-      "pediatrie": "Paediatrics", "urgences": "24/7 emergency", "imagerie": "Medical imaging", "fertilite": "Assisted reproduction"
+      "chirurgie": "General surgery",
+      "cardiologie": "Cardiology",
+      "maternite": "Maternity",
+      "oncologie": "Oncology",
+      "ophtalmologie": "Ophthalmology",
+      "orthopedie": "Orthopaedics",
+      "esthetique": "Cosmetic surgery",
+      "dialyse": "Haemodialysis",
+      "pediatrie": "Paediatrics",
+      "urgences": "24/7 emergency",
+      "imagerie": "Medical imaging",
+      "fertilite": "Assisted reproduction"
     }
   },
   "patient": {
@@ -138,9 +192,14 @@
     "lead": "News from the Chamber and the sector, press releases and positions.",
     "filter": "Filter by type",
     "all": "All",
-    "types": {"actualite": "News", "position": "Position", "communique": "Press release"},
+    "types": {
+      "actualite": "News",
+      "position": "Position",
+      "communique": "Press release"
+    },
     "back": "Back to news",
-    "demo": "Demo content."
+    "sources": "Sources",
+    "press_note": "Article based on information published in the Tunisian press."
   },
   "press": {
     "title": "Press",

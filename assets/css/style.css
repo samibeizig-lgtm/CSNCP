@@ -241,6 +241,10 @@ p { margin: 0 0 1em; }
 .article { max-width: 740px; }
 .article p { font-size: 1.12rem; }
 
+.sources { margin-block-start: 40px; padding-block-start: 24px; border-block-start: 1px solid var(--ligne); }
+.sources h2 { font-size: 1rem; }
+.sources ul { padding-inline-start: 1.2em; margin: 0 0 8px; }
+
 /* Contenu éditorial */
 .prose { max-width: 760px; }
 .prose ul, .prose ol { padding-inline-start: 1.3em; }

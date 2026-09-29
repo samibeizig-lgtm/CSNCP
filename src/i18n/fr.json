@@ -6,7 +6,20 @@
     "utica": "Chambre membre de l'UTICA — Union Tunisienne de l'Industrie, du Commerce et de l'Artisanat",
     "utica_short": "Membre de l'UTICA"
   },
-  "months": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
+  "months": [
+    "janvier",
+    "février",
+    "mars",
+    "avril",
+    "mai",
+    "juin",
+    "juillet",
+    "août",
+    "septembre",
+    "octobre",
+    "novembre",
+    "décembre"
+  ],
   "ui": {
     "skip": "Aller au contenu",
     "language": "Langue",
@@ -26,14 +39,38 @@
     "contact": "Contact"
   },
   "meta": {
-    "index": {"title": "CSNCP — Chambre Syndicale Nationale des Cliniques Privées", "description": "Site officiel de la Chambre Syndicale Nationale des Cliniques Privées de Tunisie, membre de l'UTICA : annuaire des cliniques, espace patient, actualités et presse."},
-    "la-chambre": {"title": "La Chambre", "description": "Mission, bureau exécutif, statuts et historique de la CSNCP."},
-    "annuaire": {"title": "Annuaire des cliniques adhérentes", "description": "Trouvez une clinique privée adhérente en Tunisie par région et spécialité, avec carte et contacts."},
-    "espace-patient": {"title": "Espace patient", "description": "Droits du patient, comprendre sa facture, prise en charge CNAM et assurances, démarche de réclamation."},
-    "actualites": {"title": "Actualités et prises de position", "description": "Actualités, communiqués et prises de position de la CSNCP."},
-    "presse": {"title": "Espace presse", "description": "Communiqués, chiffres clés, kit média et contact presse de la CSNCP."},
-    "medecine-de-voyage": {"title": "Médecine de voyage", "description": "Pourquoi se soigner en Tunisie : qualité, proximité, accueil et accompagnement dans les cliniques privées."},
-    "contact": {"title": "Contact", "description": "Contacter la Chambre Syndicale Nationale des Cliniques Privées."}
+    "index": {
+      "title": "CSNCP — Chambre Syndicale Nationale des Cliniques Privées",
+      "description": "Site officiel de la Chambre Syndicale Nationale des Cliniques Privées de Tunisie, membre de l'UTICA : annuaire des cliniques, espace patient, actualités et presse."
+    },
+    "la-chambre": {
+      "title": "La Chambre",
+      "description": "Mission, bureau exécutif, statuts et historique de la CSNCP."
+    },
+    "annuaire": {
+      "title": "Annuaire des cliniques adhérentes",
+      "description": "Trouvez une clinique privée adhérente en Tunisie par région et spécialité, avec carte et contacts."
+    },
+    "espace-patient": {
+      "title": "Espace patient",
+      "description": "Droits du patient, comprendre sa facture, prise en charge CNAM et assurances, démarche de réclamation."
+    },
+    "actualites": {
+      "title": "Actualités et prises de position",
+      "description": "Actualités, communiqués et prises de position de la CSNCP."
+    },
+    "presse": {
+      "title": "Espace presse",
+      "description": "Communiqués, chiffres clés, kit média et contact presse de la CSNCP."
+    },
+    "medecine-de-voyage": {
+      "title": "Médecine de voyage",
+      "description": "Pourquoi se soigner en Tunisie : qualité, proximité, accueil et accompagnement dans les cliniques privées."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contacter la Chambre Syndicale Nationale des Cliniques Privées."
+    }
   },
   "home": {
     "eyebrow": "Site officiel · Tunisie",
@@ -110,13 +147,30 @@
     "email": "E-mail",
     "web": "Site web",
     "regions": {
-      "tunis": "Tunis", "ariana": "Ariana", "benarous": "Ben Arous", "nabeul": "Nabeul", "bizerte": "Bizerte",
-      "sousse": "Sousse", "monastir": "Monastir", "sfax": "Sfax", "gabes": "Gabès", "medenine": "Médenine"
+      "tunis": "Tunis",
+      "ariana": "Ariana",
+      "benarous": "Ben Arous",
+      "nabeul": "Nabeul",
+      "bizerte": "Bizerte",
+      "sousse": "Sousse",
+      "monastir": "Monastir",
+      "sfax": "Sfax",
+      "gabes": "Gabès",
+      "medenine": "Médenine"
     },
     "specialties": {
-      "chirurgie": "Chirurgie générale", "cardiologie": "Cardiologie", "maternite": "Maternité", "oncologie": "Oncologie",
-      "ophtalmologie": "Ophtalmologie", "orthopedie": "Orthopédie", "esthetique": "Chirurgie esthétique", "dialyse": "Hémodialyse",
-      "pediatrie": "Pédiatrie", "urgences": "Urgences 24h/24", "imagerie": "Imagerie médicale", "fertilite": "Procréation assistée"
+      "chirurgie": "Chirurgie générale",
+      "cardiologie": "Cardiologie",
+      "maternite": "Maternité",
+      "oncologie": "Oncologie",
+      "ophtalmologie": "Ophtalmologie",
+      "orthopedie": "Orthopédie",
+      "esthetique": "Chirurgie esthétique",
+      "dialyse": "Hémodialyse",
+      "pediatrie": "Pédiatrie",
+      "urgences": "Urgences 24h/24",
+      "imagerie": "Imagerie médicale",
+      "fertilite": "Procréation assistée"
     }
   },
   "patient": {
@@ -138,9 +192,14 @@
     "lead": "L'actualité de la Chambre et du secteur, ses communiqués et ses prises de position.",
     "filter": "Filtrer par type",
     "all": "Tout",
-    "types": {"actualite": "Actualité", "position": "Prise de position", "communique": "Communiqué"},
+    "types": {
+      "actualite": "Actualité",
+      "position": "Prise de position",
+      "communique": "Communiqué"
+    },
     "back": "Retour aux actualités",
-    "demo": "Contenu de démonstration."
+    "sources": "Sources",
+    "press_note": "Article rédigé à partir d'informations publiées par la presse tunisienne."
   },
   "press": {
     "title": "Espace presse",

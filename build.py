@@ -91,6 +91,20 @@ def news_cards(items, lang, tr, prefix, limit=None):
     return "\n".join(out)
 
 
+def sources_html(item, tr):
+    sources = item.get("sources")
+    if not sources:
+        return ""
+    links = "".join(
+        f'<li><a href="{html.escape(s["url"])}" rel="noopener" target="_blank">{html.escape(s["name"])}</a></li>'
+        for s in sources
+    )
+    return (
+        f'<aside class="sources"><h2>{tr["news"]["sources"]}</h2><ul>{links}</ul>'
+        f'<p class="note">{tr["news"]["press_note"]}</p></aside>'
+    )
+
+
 def figures_html(figures, lang):
     return "\n".join(
         f'<div class="figure"><strong>{html.escape(f["value"])}</strong><span>{html.escape(f[lang])}</span></div>'
@@ -199,6 +213,7 @@ def build():
                 "a_date": fmt_date(it["date"], lang, tr),
                 "a_iso": it["date"],
                 "a_body": paragraphs,
+                "a_sources": sources_html(it, tr),
             }
             html_out = page(
                 "actualites",

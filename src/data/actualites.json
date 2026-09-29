@@ -1,5 +1,238 @@
 [
   {
+    "id": "impayes-cnam-assemblee-extraordinaire",
+    "date": "2026-09-28",
+    "type": "communique",
+    "sources": [
+      {
+        "name": "La Presse de Tunisie",
+        "url": "https://www.lapresse.tn/2026/09/28/les-cliniques-privees-alertent-sur-un-risque-de-paralysie"
+      },
+      {
+        "name": "Business News",
+        "url": "https://businessnews.com.tn/2026/09/28/apres-huit-mois-dimpayes-les-cliniques-privees-alertent-sur-un-risque-darret-dactivite/1420472/"
+      },
+      {
+        "name": "L'Économiste Maghrébin",
+        "url": "https://www.leconomistemaghrebin.com/2026/09/29/cliniques-privees-huit-mois-impayes-aupres-cnam/"
+      },
+      {
+        "name": "Mosaïque FM (ar)",
+        "url": "https://www.mosaiquefm.net/ar/%D8%AA%D9%88%D9%86%D8%B3-%D9%88%D8%B7%D9%86%D9%8A%D8%A9/1531705/%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D8%A7%D8%AA-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5%D8%A9-%D8%AA-%D8%AD%D8%B0-%D8%B1-%D9%85%D9%86-%D8%A3%D8%B2%D9%85%D8%A9-%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%AA%D9%87%D8%AF-%D8%AF-%D8%A8%D8%B9%D8%B6%D9%87%D8%A7-%D8%A8%D8%A7%D9%84%D8%AA%D9%88%D9%82-%D9%81-%D8%B9%D9%86-%D8%A7%D9%84%D9%86%D8%B4%D8%A7%D8%B7"
+      }
+    ],
+    "fr": {
+      "title": "Huit mois d'impayés de la CNAM : la Chambre alerte sur un risque d'arrêt d'activité",
+      "summary": "Réunie en assemblée générale extraordinaire le 24 septembre au siège de l'UTICA, la Chambre demande un échéancier clair de paiement des créances de la CNAM.",
+      "body": [
+        "La Chambre syndicale nationale des cliniques privées a tenu le 24 septembre 2026, au siège de l'UTICA, une assemblée générale extraordinaire consacrée aux relations avec la Caisse nationale d'assurance maladie (CNAM) et au différend qui l'oppose à la CNSS.",
+        "Dans le communiqué publié à l'issue de cette assemblée, la Chambre indique que les cliniques privées n'ont pas perçu leurs créances auprès de la CNAM depuis huit mois, alors qu'elles continuent de soigner les assurés sociaux. Selon la Chambre, les prestations prises en charge par la CNAM représentent entre 30 % et 70 % de l'activité des établissements, selon la clinique et la région. De nombreuses cliniques sont menacées d'arrêt d'activité.",
+        "La Chambre formule trois demandes : la mise en place immédiate d'un échéancier clair de paiement des créances accumulées auprès de la CNAM ; la publication par la CNSS d'une note commune sur le statut des médecins libéraux exerçant en clinique ; une médiation diplomatique et financière avec les autorités libyennes pour régler les dettes accumulées depuis 2016.",
+        "Le secteur compte environ 112 cliniques privées et plus de 7 100 lits, et concentre près des deux tiers des équipements médicaux lourds du pays."
+      ]
+    },
+    "ar": {
+      "title": "ثمانية أشهر دون خلاص مستحقات الكنام: الغرفة تحذّر من خطر توقف النشاط",
+      "summary": "إثر جلسة عامة خارقة للعادة انعقدت يوم 24 سبتمبر بمقر الاتحاد، تطالب الغرفة بروزنامة واضحة لخلاص مستحقات المصحات لدى الصندوق الوطني للتأمين على المرض.",
+      "body": [
+        "عقدت الغرفة النقابية الوطنية للمصحات الخاصة يوم 24 سبتمبر 2026 بمقر الاتحاد التونسي للصناعة والتجارة والصناعات التقليدية جلسة عامة خارقة للعادة خُصّصت للعلاقة مع الصندوق الوطني للتأمين على المرض وللخلاف القائم مع الصندوق الوطني للضمان الاجتماعي.",
+        "وأفادت الغرفة في بيانها أن المصحات الخاصة لم تتحصل على مستحقاتها لدى الصندوق الوطني للتأمين على المرض منذ ثمانية أشهر، رغم مواصلتها تقديم الخدمات الصحية للمضمونين الاجتماعيين. وتمثل المعاملات مع الصندوق ما بين 30 و70 بالمائة من نشاط المصحات حسب المؤسسة والجهة، وهو ما يهدد عددا منها بالتوقف عن النشاط.",
+        "وتطالب الغرفة بثلاثة إجراءات: وضع روزنامة واضحة وفورية لخلاص المستحقات المتراكمة، وإصدار الصندوق الوطني للضمان الاجتماعي لمذكرة مشتركة توضح وضعية الأطباء الناشطين لحسابهم الخاص داخل المصحات، ووساطة دبلوماسية ومالية مع السلطات الليبية لتسوية الديون المتراكمة منذ 2016.",
+        "ويضم القطاع قرابة 112 مصحة خاصة بأكثر من 7100 سرير، ويستأثر بنحو ثلثي التجهيزات الطبية الثقيلة في البلاد."
+      ]
+    },
+    "en": {
+      "title": "Eight months of unpaid CNAM claims: the Chamber warns clinics may have to stop operating",
+      "summary": "Following an extraordinary general assembly held on 24 September at UTICA headquarters, the Chamber calls for a clear schedule for CNAM to settle its arrears.",
+      "body": [
+        "On 24 September 2026, the National Syndical Chamber of Private Clinics held an extraordinary general assembly at UTICA headquarters on relations with the National Health Insurance Fund (CNAM) and its dispute with the National Social Security Fund (CNSS).",
+        "In the statement issued afterwards, the Chamber said private clinics have not been paid by CNAM for eight months, although they continue to treat insured patients. According to the Chamber, CNAM-covered care accounts for 30% to 70% of clinics' activity depending on the facility and region, and many clinics are at risk of closing.",
+        "The Chamber makes three demands: an immediate, clear payment schedule for the accumulated CNAM arrears; a joint note from CNSS clarifying the status of self-employed doctors working in clinics; and diplomatic and financial mediation with the Libyan authorities to settle debts accumulated since 2016.",
+        "The sector comprises some 112 private clinics with more than 7,100 beds, and holds nearly two-thirds of the country's heavy medical equipment."
+      ]
+    }
+  },
+  {
+    "id": "differend-cnss-medecins-liberaux",
+    "date": "2026-09-28",
+    "type": "position",
+    "sources": [
+      {
+        "name": "Webdo",
+        "url": "https://www.webdo.tn/fr/actualite/national/cliniques-privees-huit-mois-dimpayes-de-la-cnam-le-secteur-alerte-sur-une-crise-financiere/404656/"
+      },
+      {
+        "name": "Le Temps News",
+        "url": "https://letemps.news/2026/09/28/le-syndicat-des-cliniques-tire-la-sonnette-dalarme-face-a-laccumulation-des-impayes/"
+      },
+      {
+        "name": "Espace Manager",
+        "url": "https://espacemanager.com/les-cliniques-privees-tirent-la-sonnette-dalarme/"
+      }
+    ],
+    "fr": {
+      "title": "Cotisations des médecins libéraux : la Chambre conteste la position de la CNSS",
+      "summary": "La Chambre juge sans fondement juridique la demande de la CNSS de faire payer aux cliniques les cotisations des médecins libéraux qui y exercent.",
+      "body": [
+        "La CNSS demande désormais aux cliniques privées de prendre en charge les cotisations sociales de médecins exerçant à titre libéral en leur sein, notamment des radiologues et des anesthésistes, en les assimilant à des salariés.",
+        "Pour la Chambre, ce reclassement est dépourvu de fondement juridique : ces médecins exercent en leur nom propre et sous leur responsabilité, perçoivent directement leurs honoraires ou interviennent dans le cadre de conventions de coopération, et versent eux-mêmes leurs cotisations. Cette position est partagée par le ministère de la Santé et l'Ordre des médecins, selon la Chambre.",
+        "Des discussions entre le patronat, le ministère des Affaires sociales et la CNSS ont abouti à des engagements verbaux de suspension des poursuites, sans texte officiel à ce jour. La Chambre demande à la CNSS de publier une note commune exonérant explicitement les cliniques des cotisations des médecins indépendants."
+      ]
+    },
+    "ar": {
+      "title": "مساهمات الأطباء الناشطين لحسابهم الخاص: الغرفة تعترض على موقف صندوق الضمان الاجتماعي",
+      "summary": "تعتبر الغرفة أن مطالبة الصندوق الوطني للضمان الاجتماعي للمصحات بدفع مساهمات الأطباء الناشطين لحسابهم الخاص داخلها لا تستند إلى أي أساس قانوني.",
+      "body": [
+        "أصبح الصندوق الوطني للضمان الاجتماعي يطالب المصحات الخاصة بتحمل المساهمات الاجتماعية لأطباء يمارسون نشاطهم لحسابهم الخاص داخلها، ولا سيما أطباء الأشعة والتخدير، باعتبارهم أجراء.",
+        "وترى الغرفة أن هذا التصنيف لا يستند إلى أي أساس قانوني، إذ يمارس هؤلاء الأطباء باسمهم وتحت مسؤوليتهم، ويتقاضون أتعابهم مباشرة أو في إطار اتفاقيات تعاون، ويدفعون مساهماتهم بأنفسهم. وتفيد الغرفة بأن وزارة الصحة وعمادة الأطباء تشاطرانها هذا الموقف.",
+        "وأفضت نقاشات بين منظمة الأعراف ووزارة الشؤون الاجتماعية والصندوق إلى التزامات شفاهية بتعليق التتبعات، دون صدور أي نص رسمي إلى حد الآن. وتطالب الغرفة الصندوق بإصدار مذكرة مشتركة تعفي المصحات صراحة من مساهمات الأطباء المستقلين."
+      ]
+    },
+    "en": {
+      "title": "Contributions of self-employed doctors: the Chamber challenges the CNSS position",
+      "summary": "The Chamber says CNSS has no legal basis for requiring clinics to pay social contributions for self-employed doctors practising on their premises.",
+      "body": [
+        "CNSS is now asking private clinics to pay social security contributions for doctors who practise there on a self-employed basis, particularly radiologists and anaesthetists, treating them as employees.",
+        "The Chamber considers this reclassification to have no legal basis: these doctors practise in their own name and under their own responsibility, collect their fees directly or work under cooperation agreements, and pay their own contributions. According to the Chamber, the Ministry of Health and the Medical Association share this view.",
+        "Talks between employers, the Ministry of Social Affairs and CNSS led to verbal commitments to suspend proceedings, but no official text has been issued so far. The Chamber is asking CNSS to publish a joint note explicitly exempting clinics from contributions for independent doctors."
+      ]
+    }
+  },
+  {
+    "id": "dettes-libyennes-2026",
+    "date": "2026-09-22",
+    "type": "actualite",
+    "sources": [
+      {
+        "name": "Webdo",
+        "url": "https://www.webdo.tn/fr/actualite/national/tunisie-libye-plus-de-400-md-de-dettes-de-sante-restent-en-suspens/404401/"
+      },
+      {
+        "name": "Espace Manager",
+        "url": "https://espacemanager.com/cliniques-tunisiennes-les-dettes-libyennes-depassent-les-400-millions-dt/"
+      },
+      {
+        "name": "Akhbar Libya 24 (ar)",
+        "url": "https://akhbarlibya24.net/2026/09/22/%D8%AA%D9%88%D9%86%D8%B3-%D8%AA%D8%B7%D8%A7%D9%84%D8%A8-%D8%A8%D8%AD%D8%B3%D9%85-%D8%AF%D9%8A%D9%88%D9%86%D9%87%D8%A7-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AD%D9%82%D8%A9-%D8%B9%D9%84%D9%89-%D9%84"
+      }
+    ],
+    "fr": {
+      "title": "Dettes libyennes : le dossier des cliniques évoqué entre Tunis et Tripoli",
+      "summary": "Les créances des cliniques privées sur la partie libyenne, accumulées depuis 2016, sont estimées à plus de 350 millions de dinars.",
+      "body": [
+        "Le dossier des impayés libyens envers le secteur de la santé tunisien a été abordé le 21 septembre 2026 à New York par les ministres des Affaires étrangères tunisien et libyen, qui ont souligné la nécessité d'une coordination pour le régler. Aucun montant ni échéancier n'a été annoncé.",
+        "Ces créances concernent notamment la prise en charge de patients libyens dans les établissements tunisiens. Le président de la Chambre, le Pr Boubaker Zakhama, les a estimées à plus de 350 millions de dinars ; un représentant du secteur a avancé en mars 2025 un montant supérieur à 400 millions de dinars.",
+        "La Chambre demande une médiation diplomatique et financière pour régler ces dettes, accumulées depuis 2016."
+      ]
+    },
+    "ar": {
+      "title": "الديون الليبية: ملف المصحات يُطرح بين تونس وطرابلس",
+      "summary": "تُقدّر مستحقات المصحات الخاصة لدى الجانب الليبي، المتراكمة منذ 2016، بأكثر من 350 مليون دينار.",
+      "body": [
+        "تناول وزيرا الخارجية التونسي والليبي يوم 21 سبتمبر 2026 بنيويورك ملف المستحقات الليبية لفائدة القطاع الصحي التونسي، وأكدا ضرورة التنسيق لتسويته، دون الإعلان عن أي مبلغ أو روزنامة للخلاص.",
+        "وتتعلق هذه المستحقات خاصة بالتكفل بمرضى ليبيين في المؤسسات الصحية التونسية. وقدّرها رئيس الغرفة الأستاذ بوبكر زخامة بأكثر من 350 مليون دينار، فيما تحدث ممثل عن القطاع في مارس 2025 عن أكثر من 400 مليون دينار.",
+        "وتطالب الغرفة بوساطة دبلوماسية ومالية لتسوية هذه الديون المتراكمة منذ 2016."
+      ]
+    },
+    "en": {
+      "title": "Libyan debts: clinics' claims raised between Tunis and Tripoli",
+      "summary": "Private clinics' outstanding claims on the Libyan side, accumulated since 2016, are estimated at over 350 million dinars.",
+      "body": [
+        "The issue of unpaid Libyan bills owed to the Tunisian health sector was discussed on 21 September 2026 in New York by the Tunisian and Libyan foreign ministers, who stressed the need for coordination to resolve it. No amount or payment schedule was announced.",
+        "The claims relate mainly to the treatment of Libyan patients in Tunisian facilities. The Chamber's president, Prof. Boubaker Zakhama, has put them at more than 350 million dinars; a sector representative cited over 400 million dinars in March 2025.",
+        "The Chamber is calling for diplomatic and financial mediation to settle these debts, which date back to 2016."
+      ]
+    }
+  },
+  {
+    "id": "loi-cheques-paiements-2025",
+    "date": "2025-03-20",
+    "type": "actualite",
+    "sources": [
+      {
+        "name": "La Presse de Tunisie",
+        "url": "https://lapresse.tn/2025/03/20/comment-les-cliniques-privees-sadaptent-elles-a-la-chute-de-80-des-paiements-par-cheque/"
+      },
+      {
+        "name": "Al Araby Al Jadeed (ar)",
+        "url": "https://www.alaraby.co.uk/economy/%D8%A7%D9%84%D8%B4%D9%8A%D9%83-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF-%D9%8A%D8%B1%D8%A8%D9%83-%D8%A7%D9%84%D9%82%D8%B7%D8%A7%D8%B9-%D8%A7%D9%84%D8%B5%D8%AD%D9%8A-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5-%D9%81%D9%8A-%D8%AA%D9%88%D9%86%D8%B3"
+      }
+    ],
+    "fr": {
+      "title": "Nouvelle loi sur les chèques : les paiements par chèque en baisse de 80 % dans les cliniques",
+      "summary": "Le président de la Chambre constate une chute de 80 % des paiements par chèque et une baisse d'environ 30 % des prestations depuis l'entrée en vigueur de la nouvelle loi.",
+      "body": [
+        "Le Pr Boubaker Zakhama, président de la Chambre, a fait état d'une baisse de 80 % des paiements par chèque dans les cliniques privées depuis l'entrée en vigueur de la nouvelle législation sur les chèques.",
+        "Les cliniques accordaient traditionnellement des facilités de paiement aux patients, notamment par chèques. Selon la Chambre, ce changement s'est traduit par une réduction d'environ 30 % des prestations, avec des conséquences sur l'accès des citoyens aux soins.",
+        "Les établissements doivent désormais adapter leurs modalités de paiement."
+      ]
+    },
+    "ar": {
+      "title": "قانون الشيكات الجديد: تراجع الخلاص بالشيك في المصحات بنسبة 80 بالمائة",
+      "summary": "سجّل رئيس الغرفة تراجعا بنسبة 80 بالمائة في الخلاص بالشيكات وانخفاضا بنحو 30 بالمائة في الخدمات منذ دخول القانون الجديد حيز التنفيذ.",
+      "body": [
+        "أفاد الأستاذ بوبكر زخامة، رئيس الغرفة، بتراجع الخلاص بالشيكات في المصحات الخاصة بنسبة 80 بالمائة منذ دخول القانون الجديد المتعلق بالشيكات حيز التنفيذ.",
+        "وكانت المصحات تمنح المرضى تقليديا تسهيلات في الدفع، أبرزها الشيكات. ووفق الغرفة، أدى هذا التغيير إلى تراجع الخدمات المسداة بنحو 30 بالمائة، مع انعكاسات على نفاذ المواطنين إلى العلاج.",
+        "وتعمل المؤسسات على تكييف طرق الخلاص."
+      ]
+    },
+    "en": {
+      "title": "New cheque law: cheque payments down 80% in private clinics",
+      "summary": "The Chamber's president reports an 80% drop in cheque payments and a roughly 30% decline in services since the new law came into force.",
+      "body": [
+        "Prof. Boubaker Zakhama, president of the Chamber, reported an 80% drop in cheque payments at private clinics since the new cheque legislation came into force.",
+        "Clinics traditionally offered patients payment facilities, mainly by cheque. According to the Chamber, the change has led to a reduction of about 30% in services provided, affecting citizens' access to care.",
+        "Clinics now have to adapt their payment arrangements."
+      ]
+    }
+  },
+  {
+    "id": "accord-salarial-2022-2024",
+    "date": "2022-06-28",
+    "type": "communique",
+    "sources": [
+      {
+        "name": "Webdo",
+        "url": "https://webdo.tn/2022/06/28/cliniques-privees-signature-dun-accord-sur-laugmentation-salariale"
+      },
+      {
+        "name": "Tunisie Tribune",
+        "url": "https://www.tunisie-tribune.com/2022/06/28/accord-sur-laugmentation-salariale-des-agents-exercant-dans-les-cliniques-privees/"
+      },
+      {
+        "name": "Tunisie Numérique",
+        "url": "https://www.tunisienumerique.com/ugtt-augmentation-salariale-pour-les-agents-des-cliniques-privees/"
+      }
+    ],
+    "fr": {
+      "title": "Accord sur les augmentations salariales des agents des cliniques privées pour 2022-2024",
+      "summary": "L'UGTT et l'UTICA signent, pour le secteur des cliniques privées, un accord de majoration des salaires de 6,5 % en 2022 puis 6,75 % en 2023 et en 2024.",
+      "body": [
+        "Un accord sur l'augmentation des salaires des agents exerçant dans les cliniques privées a été signé entre l'UGTT et l'UTICA, la Chambre syndicale nationale des cliniques privées représentant la partie patronale.",
+        "L'accord prévoit une majoration des salaires de 6,5 % pour 2022, de 6,75 % pour 2023 et de 6,75 % pour 2024.",
+        "Il s'inscrit dans le cadre de l'accord-cadre conclu entre l'UGTT et l'UTICA au début de l'année 2022 sur les augmentations salariales dans le secteur privé pour la période 2022-2024."
+      ]
+    },
+    "ar": {
+      "title": "اتفاق حول الزيادة في أجور أعوان المصحات الخاصة للفترة 2022-2024",
+      "summary": "الاتحاد العام التونسي للشغل واتحاد الصناعة والتجارة يوقّعان اتفاقا للزيادة في الأجور بقطاع المصحات الخاصة بنسبة 6,5 بالمائة سنة 2022 ثم 6,75 بالمائة سنتي 2023 و2024.",
+      "body": [
+        "تم توقيع اتفاق حول الزيادة في أجور الأعوان العاملين بالمصحات الخاصة بين الاتحاد العام التونسي للشغل والاتحاد التونسي للصناعة والتجارة والصناعات التقليدية، ممثلا في الغرفة النقابية الوطنية للمصحات الخاصة عن الجانب المؤجر.",
+        "وينص الاتفاق على زيادة في الأجور بنسبة 6,5 بالمائة لسنة 2022، و6,75 بالمائة لسنة 2023، و6,75 بالمائة لسنة 2024.",
+        "ويندرج هذا الاتفاق في إطار الاتفاق الإطاري المبرم بين المنظمتين مطلع سنة 2022 حول الزيادات في أجور القطاع الخاص للفترة 2022-2024."
+      ]
+    },
+    "en": {
+      "title": "Agreement on pay rises for private clinic staff, 2022-2024",
+      "summary": "UGTT and UTICA sign an agreement for the private clinic sector raising wages by 6.5% in 2022 and 6.75% in both 2023 and 2024.",
+      "body": [
+        "An agreement on pay rises for staff working in private clinics was signed between UGTT and UTICA, with the National Syndical Chamber of Private Clinics representing employers.",
+        "The agreement provides for wage increases of 6.5% for 2022, 6.75% for 2023 and 6.75% for 2024.",
+        "It falls under the framework agreement concluded between UGTT and UTICA in early 2022 on private-sector pay rises for 2022-2024."
+      ]
+    }
+  },
+  {
     "id": "lancement-site-officiel",
     "date": "2026-09-28",
     "type": "communique",
@@ -29,35 +262,6 @@
     }
   },
   {
-    "id": "position-conventions-cnam",
-    "date": "2026-09-15",
-    "type": "position",
-    "fr": {
-      "title": "Conventions avec la CNAM : la Chambre appelle à une révision concertée",
-      "summary": "La CSNCP plaide pour une actualisation des tarifs conventionnels et une meilleure lisibilité pour les assurés.",
-      "body": [
-        "Contenu d'exemple — le texte définitif de la prise de position sera validé par le Bureau.",
-        "La Chambre rappelle son attachement à un dialogue régulier avec la Caisse nationale d'assurance maladie et les pouvoirs publics, dans l'intérêt des patients et de la pérennité des établissements."
-      ]
-    },
-    "ar": {
-      "title": "الاتفاقيات مع الصندوق الوطني للتأمين على المرض: الغرفة تدعو إلى مراجعة تشاركية",
-      "summary": "تدعو الغرفة إلى تحيين التعريفات التعاقدية وإلى مزيد الوضوح لفائدة المضمونين الاجتماعيين.",
-      "body": [
-        "محتوى على سبيل المثال — يصادق المكتب على النص النهائي للموقف.",
-        "تؤكد الغرفة تمسكها بحوار منتظم مع الصندوق الوطني للتأمين على المرض والسلط العمومية، خدمة لمصلحة المرضى واستمرارية المؤسسات."
-      ]
-    },
-    "en": {
-      "title": "CNAM agreements: the Chamber calls for a joint review",
-      "summary": "CSNCP advocates updated agreed tariffs and clearer information for insured patients.",
-      "body": [
-        "Sample content — the final wording of this position will be approved by the Board.",
-        "The Chamber reaffirms its commitment to regular dialogue with the National Health Insurance Fund (CNAM) and public authorities, in the interest of patients and of the long-term viability of clinics."
-      ]
-    }
-  },
-  {
     "id": "nouvelle-identite-visuelle",
     "date": "2026-09-05",
     "type": "actualite",
@@ -83,35 +287,6 @@
       "body": [
         "At the heart of the new logo, a blue figure rises with arms raised: the patient getting back up, healing and regaining confidence.",
         "Around it, six coloured petals represent the clinics, their specialties and their regions. Together they form a blossoming flower."
-      ]
-    }
-  },
-  {
-    "id": "journee-nationale-patient",
-    "date": "2026-07-10",
-    "type": "communique",
-    "fr": {
-      "title": "Journée nationale : « Le patient au cœur de nos cliniques »",
-      "summary": "Les cliniques adhérentes ouvrent leurs portes pour présenter leurs démarches qualité et d'accueil.",
-      "body": [
-        "Contenu d'exemple — date, programme et établissements participants à confirmer.",
-        "Cette journée vise à mieux faire connaître au public les droits du patient, les démarches de prise en charge et les engagements qualité des établissements adhérents."
-      ]
-    },
-    "ar": {
-      "title": "اليوم الوطني: «المريض في قلب مصحاتنا»",
-      "summary": "المصحات المنخرطة تفتح أبوابها للتعريف بمساعي الجودة وحسن الاستقبال.",
-      "body": [
-        "محتوى على سبيل المثال — يتم تأكيد التاريخ والبرنامج والمؤسسات المشاركة لاحقا.",
-        "يهدف هذا اليوم إلى تعريف العموم بحقوق المريض وإجراءات التكفل والتزامات الجودة لدى المؤسسات المنخرطة."
-      ]
-    },
-    "en": {
-      "title": "National Day: “Patients at the heart of our clinics”",
-      "summary": "Member clinics open their doors to present their quality and patient-care initiatives.",
-      "body": [
-        "Sample content — date, programme and participating clinics to be confirmed.",
-        "The day aims to raise public awareness of patients' rights, coverage procedures and the quality commitments of member clinics."
       ]
     }
   }
