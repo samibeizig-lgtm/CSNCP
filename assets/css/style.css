@@ -88,6 +88,7 @@ p { margin: 0 0 1em; }
 /* ---------- En-tête ---------- */
 .site-header { background: var(--blanc); position: sticky; top: 0; z-index: 50; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 84px; }
+.brand { display: block; padding-block: 14px; }
 .brand img { width: 240px; }
 .main-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; flex-wrap: wrap; }
 .main-nav a {
@@ -161,6 +162,7 @@ p { margin: 0 0 1em; }
   .main-nav a { padding: 12px 8px; }
   .main-nav > ul > li > a[aria-current="page"] { box-shadow: inset 3px 0 0 var(--bleu); }
   [dir="rtl"] .main-nav > ul > li > a[aria-current="page"] { box-shadow: inset -3px 0 0 var(--bleu); }
+  .brand { padding-block: 10px; }
   .brand img { width: 190px; }
   .header-inner { min-height: 72px; }
 }
