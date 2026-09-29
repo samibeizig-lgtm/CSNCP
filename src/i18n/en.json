@@ -96,16 +96,9 @@
     "note": "Source: National Syndical Chamber of Private Clinics, September 2026. Figures for the private clinic sector."
   },
   "social": {
-    "title": "One website, three networks",
-    "lead": "The website is the Chamber's official foundation. Each social network points back to it and plays a specific role.",
-    "web": "Website",
-    "web_role_long": "Official, permanent source: reference texts, directory, patient information, press releases.",
     "facebook_role": "General public and patients",
-    "facebook_role_long": "Inform the public and patients: practical advice, reminders of rights, events.",
     "instagram_role": "Image and prevention",
-    "instagram_role_long": "Show the human face of clinics: professions, behind the scenes, prevention campaigns.",
-    "linkedin_role": "Institutions and partners",
-    "linkedin_role_long": "Address decision-makers, partners and media: positions, studies, news of the profession."
+    "linkedin_role": "Institutions and partners"
   },
   "chamber": {
     "title": "The Chamber",

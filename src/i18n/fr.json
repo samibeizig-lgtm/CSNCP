@@ -96,16 +96,9 @@
     "note": "Source : Chambre syndicale nationale des cliniques privées, septembre 2026. Données du secteur des cliniques privées."
   },
   "social": {
-    "title": "Un site, trois réseaux",
-    "lead": "Le site web est le socle officiel de la Chambre. Chaque réseau social y renvoie et joue un rôle précis.",
-    "web": "Site web",
-    "web_role_long": "Source officielle et permanente : textes de référence, annuaire, informations patients, communiqués.",
     "facebook_role": "Grand public et patients",
-    "facebook_role_long": "Informer le grand public et les patients : conseils pratiques, rappels de droits, événements.",
     "instagram_role": "Image et prévention",
-    "instagram_role_long": "Montrer le visage humain des cliniques : métiers, coulisses, campagnes de prévention.",
-    "linkedin_role": "Institutionnel et partenaires",
-    "linkedin_role_long": "S'adresser aux décideurs, partenaires et médias : prises de position, études, vie de la profession."
+    "linkedin_role": "Institutionnel et partenaires"
   },
   "chamber": {
     "title": "La Chambre",
