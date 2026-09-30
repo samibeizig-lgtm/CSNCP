@@ -38,6 +38,11 @@ PAGES = [
 ]
 NAV = ["la-chambre", "annuaire", "espace-patient", "actualites", "presse", "medecine-de-voyage"]
 SITE_URL = "https://www.csncp.tn"
+# Formulaire d'adhésion : adresse qui reçoit les demandes. Si JOIN_ENDPOINT est renseigné
+# (ex. https://formspree.io/f/xxxx), le formulaire y est envoyé directement ;
+# sinon il ouvre la messagerie du visiteur avec un e-mail pré-rempli vers JOIN_EMAIL.
+JOIN_EMAIL = "contact@csncp.tn"
+JOIN_ENDPOINT = ""
 
 TOKEN = re.compile(r"\{\{\s*(@?[\w.\-]+)\s*\}\}")
 
@@ -218,6 +223,7 @@ def build():
                 "i18n_json": json.dumps(tr["directory"], ensure_ascii=False).replace("</", "<\\/"),
             }
             v.update(versions)
+            v.update({"join_email": JOIN_EMAIL, "join_endpoint": JOIN_ENDPOINT})
             v.update(extra or {})
             body = render(body_tpl, tr, v, slug)
             v["content"] = body

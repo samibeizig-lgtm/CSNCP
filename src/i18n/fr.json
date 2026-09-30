@@ -37,7 +37,7 @@
     "espace-patient": "Espace patient",
     "actualites": "Actualités",
     "presse": "Presse",
-    "medecine-de-voyage": "Médecine de voyage",
+    "medecine-de-voyage": "Se soigner en Tunisie",
     "contact": "Contact"
   },
   "meta": {
@@ -66,7 +66,7 @@
       "description": "Communiqués, chiffres clés, kit média et contact presse de la CSNCP."
     },
     "medecine-de-voyage": {
-      "title": "Médecine de voyage",
+      "title": "Se soigner en Tunisie",
       "description": "Pourquoi se soigner en Tunisie : qualité, proximité, accueil et accompagnement dans les cliniques privées."
     },
     "contact": {
@@ -141,7 +141,7 @@
     "all": "Tous",
     "all_f": "Toutes",
     "map": "Carte des cliniques",
-    "join": "Vous dirigez une clinique privée ? <a href=\"contact.html?objet=adhesion\">Demandez votre adhésion à la Chambre</a>.",
+    "join": "Vous dirigez une clinique privée ? <a href=\"contact.html?objet=adhesion\" data-open-join>Demandez votre adhésion à la Chambre</a>.",
     "count_one": "1 clinique",
     "count_many": "{n} cliniques",
     "none": "Aucune clinique ne correspond à votre recherche.",
@@ -258,7 +258,7 @@
     "s_claim": "Réclamation patient",
     "s_member": "Demande d'adhésion",
     "s_press": "Demande presse",
-    "s_travel": "Médecine de voyage",
+    "s_travel": "Se soigner en Tunisie",
     "name": "Nom et prénom",
     "email": "Adresse e-mail",
     "phone": "Téléphone (facultatif)",
@@ -279,5 +279,27 @@
     "mission": "Mission",
     "governance": "Gouvernance",
     "team": "Équipe"
+  },
+  "join": {
+    "button": "Demande d'adhésion",
+    "title": "Demande d'adhésion à la Chambre",
+    "lead": "Remplissez ce formulaire : la Chambre vous recontactera pour finaliser votre adhésion.",
+    "clinic": "Nom de la clinique",
+    "manager": "Nom du premier responsable",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "beds": "Nombre de lits",
+    "tax_id": "Matricule fiscal",
+    "tax_ph": "1234567/A/M/000",
+    "description": "Description de la clinique",
+    "description_ph": "Spécialités, équipements, gouvernorat, date de création…",
+    "required": "Champs obligatoires",
+    "send": "Envoyer la demande",
+    "cancel": "Annuler",
+    "close": "Fermer",
+    "sent": "Merci, votre demande d'adhésion a bien été envoyée. La Chambre vous recontactera.",
+    "mail_opened": "Votre messagerie s'ouvre avec la demande pré-remplie : envoyez le message pour finaliser.",
+    "error": "L'envoi a échoué. Réessayez ou écrivez-nous à contact@csncp.tn.",
+    "subject": "Demande d'adhésion — {clinic}"
   }
 }

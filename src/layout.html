@@ -26,7 +26,10 @@
 <div class="topbar">
   <div class="wrap topbar-inner">
     <span>{{ site.utica }}</span>
-    <nav class="langs" aria-label="{{ ui.language }}">{{ @lang_switch }}</nav>
+    <div class="topbar-actions">
+      <button type="button" class="join-btn" data-open-join aria-haspopup="dialog">{{ join.button }}</button>
+      <nav class="langs" aria-label="{{ ui.language }}">{{ @lang_switch }}</nav>
+    </div>
   </div>
 </div>
 
@@ -77,6 +80,35 @@
     <span>{{ footer.official }}</span>
   </div>
 </footer>
+
+
+<dialog class="join-dialog" id="join-dialog" aria-labelledby="join-title">
+  <form class="form join-form" id="join-form" method="dialog" data-endpoint="{{ @join_endpoint }}" data-email="{{ @join_email }}"
+        data-subject="{{ join.subject }}" data-msg-sent="{{ join.sent }}" data-msg-mail="{{ join.mail_opened }}" data-msg-error="{{ join.error }}">
+    <div class="join-head">
+      <h2 id="join-title">{{ join.title }}</h2>
+      <button type="button" class="join-close" data-close-join aria-label="{{ join.close }}">&times;</button>
+    </div>
+    <p class="join-lead">{{ join.lead }}</p>
+    <label>{{ join.clinic }} *<input name="clinique" required autocomplete="organization"></label>
+    <label>{{ join.manager }} *<input name="responsable" required autocomplete="name"></label>
+    <div class="join-row">
+      <label>{{ join.phone }} *<input name="telephone" type="tel" required autocomplete="tel" dir="ltr" pattern="[0-9+()\s.\-]{8,}"></label>
+      <label>{{ join.email }} *<input name="email" type="email" required autocomplete="email" dir="ltr"></label>
+    </div>
+    <div class="join-row">
+      <label>{{ join.beds }} *<input name="lits" type="number" min="1" max="5000" step="1" required inputmode="numeric" dir="ltr"></label>
+      <label>{{ join.tax_id }} *<input name="matricule_fiscal" required placeholder="{{ join.tax_ph }}" dir="ltr" autocomplete="off"></label>
+    </div>
+    <label>{{ join.description }}<textarea name="description" rows="4" placeholder="{{ join.description_ph }}"></textarea></label>
+    <p class="note">* {{ join.required }} · {{ contact.privacy }}</p>
+    <p class="join-status" role="status" aria-live="polite" hidden></p>
+    <div class="join-actions">
+      <button type="submit" class="btn">{{ join.send }}</button>
+      <button type="button" class="btn ghost" data-close-join>{{ join.cancel }}</button>
+    </div>
+  </form>
+</dialog>
 
 <script src="{{ @root }}assets/js/main.js?v={{ @v_js }}" defer></script>
 </body>

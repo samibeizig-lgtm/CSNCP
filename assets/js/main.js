@@ -113,6 +113,62 @@
     });
   }
 
+  // Demande d'adhésion : fenêtre avec formulaire
+  var dlg = document.getElementById("join-dialog");
+  var joinForm = document.getElementById("join-form");
+  if (dlg && joinForm) {
+    var status = joinForm.querySelector(".join-status");
+    function openJoin(e) {
+      if (e) e.preventDefault();
+      status.hidden = true;
+      if (typeof dlg.showModal === "function") dlg.showModal(); else dlg.setAttribute("open", "");
+      var first = joinForm.querySelector("input");
+      if (first) first.focus();
+    }
+    function closeJoin() { if (dlg.open) dlg.close ? dlg.close() : dlg.removeAttribute("open"); }
+    document.querySelectorAll("[data-open-join]").forEach(function (el) { el.addEventListener("click", openJoin); });
+    joinForm.querySelectorAll("[data-close-join]").forEach(function (el) { el.addEventListener("click", closeJoin); });
+    dlg.addEventListener("click", function (e) { if (e.target === dlg) closeJoin(); });
+    if (/[?&]adhesion(=|&|$)/.test(location.search) || location.hash === "#adhesion") openJoin();
+
+    function show(msg, ok) {
+      status.textContent = msg; status.hidden = false;
+      status.className = "join-status " + (ok ? "ok" : "err");
+    }
+    joinForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      joinForm.classList.add("tried");
+      if (!joinForm.reportValidity()) return;
+      var fd = new FormData(joinForm);
+      var labels = {};
+      joinForm.querySelectorAll("label").forEach(function (lab) {
+        var f = lab.querySelector("input, textarea");
+        if (f) labels[f.name] = lab.firstChild.textContent.replace("*", "").trim();
+      });
+      var endpoint = joinForm.dataset.endpoint;
+      var btn = joinForm.querySelector("[type=submit]");
+      if (endpoint) {
+        btn.disabled = true;
+        fd.append("_subject", joinForm.dataset.subject.replace("{clinic}", fd.get("clinique")));
+        fetch(endpoint, { method: "POST", body: fd, headers: { Accept: "application/json" } })
+          .then(function (r) {
+            if (!r.ok) throw new Error(r.status);
+            joinForm.reset(); joinForm.classList.remove("tried"); show(joinForm.dataset.msgSent, true);
+          })
+          .catch(function () { show(joinForm.dataset.msgError, false); })
+          .then(function () { btn.disabled = false; });
+      } else {
+        var body = [];
+        fd.forEach(function (v, k) { body.push((labels[k] || k) + " : " + v); });
+        var href = "mailto:" + joinForm.dataset.email +
+          "?subject=" + encodeURIComponent(joinForm.dataset.subject.replace("{clinic}", fd.get("clinique"))) +
+          "&body=" + encodeURIComponent(body.join("\n"));
+        window.location.href = href;
+        show(joinForm.dataset.msgMail, true);
+      }
+    });
+  }
+
   // Filtre des actualités
   var chips = document.querySelectorAll(".filters .chip");
   chips.forEach(function (chip) {

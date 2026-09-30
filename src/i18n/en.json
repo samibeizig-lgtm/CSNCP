@@ -37,7 +37,7 @@
     "espace-patient": "Patients",
     "actualites": "News",
     "presse": "Press",
-    "medecine-de-voyage": "Medical travel",
+    "medecine-de-voyage": "Get treatment in Tunisia",
     "contact": "Contact"
   },
   "meta": {
@@ -66,7 +66,7 @@
       "description": "Press releases, key figures, media kit and press contact of CSNCP."
     },
     "medecine-de-voyage": {
-      "title": "Medical travel",
+      "title": "Get treatment in Tunisia",
       "description": "Why get treatment in Tunisia: quality, proximity, hospitality and support in private clinics."
     },
     "contact": {
@@ -141,7 +141,7 @@
     "all": "All",
     "all_f": "All",
     "map": "Clinic map",
-    "join": "Do you run a private clinic? <a href=\"contact.html?objet=adhesion\">Apply to join the Chamber</a>.",
+    "join": "Do you run a private clinic? <a href=\"contact.html?objet=adhesion\" data-open-join>Apply to join the Chamber</a>.",
     "count_one": "1 clinic",
     "count_many": "{n} clinics",
     "none": "No clinic matches your search.",
@@ -258,7 +258,7 @@
     "s_claim": "Patient complaint",
     "s_member": "Membership application",
     "s_press": "Press enquiry",
-    "s_travel": "Medical travel",
+    "s_travel": "Get treatment in Tunisia",
     "name": "Full name",
     "email": "Email address",
     "phone": "Phone (optional)",
@@ -279,5 +279,27 @@
     "mission": "Mission",
     "governance": "Governance",
     "team": "Team"
+  },
+  "join": {
+    "button": "Membership application",
+    "title": "Apply to join the Chamber",
+    "lead": "Fill in this form and the Chamber will contact you to complete your membership.",
+    "clinic": "Clinic name",
+    "manager": "Name of the director",
+    "phone": "Phone",
+    "email": "Email",
+    "beds": "Number of beds",
+    "tax_id": "Tax ID (matricule fiscal)",
+    "tax_ph": "1234567/A/M/000",
+    "description": "Description of the clinic",
+    "description_ph": "Specialties, equipment, governorate, year founded…",
+    "required": "Required fields",
+    "send": "Send application",
+    "cancel": "Cancel",
+    "close": "Close",
+    "sent": "Thank you, your membership application has been sent. The Chamber will contact you.",
+    "mail_opened": "Your email app is opening with the pre-filled application: send the message to complete it.",
+    "error": "Sending failed. Please try again or write to contact@csncp.tn.",
+    "subject": "Membership application — {clinic}"
   }
 }

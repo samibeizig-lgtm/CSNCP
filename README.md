@@ -71,5 +71,6 @@ npx wrangler pages deploy dist --project-name csncp
 - Chiffres clés (actuellement `XX`), adresse, téléphone et e-mails définitifs.
 - URL des pages Facebook, Instagram et LinkedIn (`src/layout.html`).
 - Nom de domaine (`SITE_URL` dans `build.py`, `src/static/robots.txt`, `src/static/index.html`).
+- Formulaire de demande d'adhésion (bouton en haut à droite) : sans configuration, il ouvre la messagerie du visiteur avec un e-mail pré-rempli vers `JOIN_EMAIL` (`build.py`). Pour recevoir les demandes directement, créer un formulaire Formspree (ou équivalent) et renseigner son adresse dans `JOIN_ENDPOINT`.
 - Formulaire de contact : actuellement en `mailto:` ; à brancher sur un service d'envoi (Formspree, Netlify Forms…) si besoin.
 - Relecture juridique de l'Espace patient (CNAM, droits, recours).
