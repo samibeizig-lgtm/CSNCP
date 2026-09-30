@@ -50,8 +50,8 @@
       "description": "Mission, bureau exécutif, statuts et historique de la CSNCP."
     },
     "annuaire": {
-      "title": "Annuaire des cliniques adhérentes",
-      "description": "Trouvez une clinique privée adhérente en Tunisie par région et spécialité, avec carte et contacts."
+      "title": "Annuaire des cliniques",
+      "description": "Trouvez une clinique privée conventionnée avec la CNAM en Tunisie, par gouvernorat et prestation (chirurgie, scanner, IRM, cardiologie, lithotritie)."
     },
     "espace-patient": {
       "title": "Espace patient",
@@ -82,7 +82,7 @@
     "cta_patient": "Espace patient",
     "access_title": "Accès rapide",
     "access_lead": "Toutes les informations officielles de la Chambre, pour les patients, les professionnels et les médias.",
-    "card_directory": "Les cliniques adhérentes par région et spécialité, avec carte et contacts.",
+    "card_directory": "Les cliniques conventionnées avec la CNAM, par gouvernorat et par prestation, avec carte.",
     "card_patient": "Vos droits, votre facture, la prise en charge CNAM et assurances, vos réclamations.",
     "card_travel": "Pourquoi se soigner en Tunisie : compétences, proximité et accueil.",
     "card_chamber": "Mission, bureau exécutif, statuts et historique de la Chambre.",
@@ -131,13 +131,13 @@
     "team_lead": "L'équipe permanente assure le suivi des dossiers, l'accompagnement des adhérents et la communication de la Chambre. Composition à compléter."
   },
   "directory": {
-    "title": "Annuaire des cliniques adhérentes",
-    "lead": "Recherchez une clinique privée membre de la Chambre par nom, région ou spécialité.",
-    "demo": "Données de démonstration — liste officielle à intégrer",
+    "title": "Annuaire des cliniques",
+    "lead": "Les cliniques privées conventionnées avec la CNAM, par gouvernorat, avec les prestations prises en charge : chirurgie, scanner, IRM, cardiologie et lithotritie.",
+    "demo": "Adresses et téléphones à venir · emplacements sur la carte indicatifs (ville ou gouvernorat)",
     "search": "Rechercher",
-    "search_ph": "Nom, ville…",
+    "search_ph": "Nom de la clinique, ville…",
     "region": "Gouvernorat",
-    "specialty": "Spécialité",
+    "specialty": "Prestation conventionnée CNAM",
     "all": "Tous",
     "all_f": "Toutes",
     "map": "Carte des cliniques",
@@ -159,22 +159,27 @@
       "monastir": "Monastir",
       "sfax": "Sfax",
       "gabes": "Gabès",
-      "medenine": "Médenine"
+      "medenine": "Médenine",
+      "zaghouan": "Zaghouan",
+      "beja": "Béja",
+      "jendouba": "Jendouba",
+      "kef": "Le Kef",
+      "kairouan": "Kairouan",
+      "kasserine": "Kasserine",
+      "mahdia": "Mahdia",
+      "gafsa": "Gafsa",
+      "kebili": "Kébili"
     },
-    "specialties": {
-      "chirurgie": "Chirurgie générale",
-      "cardiologie": "Cardiologie",
-      "maternite": "Maternité",
-      "oncologie": "Oncologie",
-      "ophtalmologie": "Ophtalmologie",
-      "orthopedie": "Orthopédie",
-      "esthetique": "Chirurgie esthétique",
-      "dialyse": "Hémodialyse",
-      "pediatrie": "Pédiatrie",
-      "urgences": "Urgences 24h/24",
-      "imagerie": "Imagerie médicale",
-      "fertilite": "Procréation assistée"
-    }
+    "services": {
+      "chirurgie": "Chirurgie",
+      "scanner": "Scanner",
+      "irm": "IRM",
+      "cardio": "Cardiologie",
+      "litho": "Lithotritie"
+    },
+    "mono": "Monodisciplinaire",
+    "approx": "Emplacement approximatif",
+    "soon": "Coordonnées à venir"
   },
   "patient": {
     "title": "Espace patient",

@@ -33,10 +33,13 @@
   var regions = {}, specs = {};
   clinics.forEach(function (c) {
     regions[c.region] = 1;
-    c.specialties.forEach(function (s) { specs[s] = 1; });
+    c.services.forEach(function (s) { specs[s] = 1; });
   });
   fill(region, Object.keys(regions), t.regions);
-  fill(spec, Object.keys(specs), t.specialties);
+  var order = ["chirurgie", "scanner", "irm", "cardio", "litho"];
+  order.filter(function (k) { return specs[k]; }).forEach(function (k) {
+    var o = document.createElement("option"); o.value = k; o.textContent = t.services[k]; spec.appendChild(o);
+  });
 
   var color = "#035FCA";
   function icon(active) {
@@ -50,15 +53,17 @@
   }
 
   function card(c) {
-    var specsHtml = c.specialties.map(function (s) { return "<li>" + esc(t.specialties[s] || s) + "</li>"; }).join("");
+    var specsHtml = c.services.map(function (s) { return "<li>" + esc(t.services[s] || s) + "</li>"; }).join("") +
+      (c.mono ? '<li class="mono">' + esc(t.mono) + "</li>" : "");
     var contacts = [];
     if (c.phone) contacts.push(t.phone + ' <a href="tel:' + esc(c.phone.replace(/\s/g, "")) + '" dir="ltr">' + esc(c.phone) + "</a>");
     if (c.email) contacts.push('<a href="mailto:' + esc(c.email) + '">' + esc(t.email) + "</a>");
     if (c.web) contacts.push('<a href="' + esc(c.web) + '" rel="noopener" target="_blank">' + esc(t.web) + "</a>");
+    if (!c.phone && !c.email && !c.web) contacts.push('<span class="soon">' + esc(t.soon) + "</span>");
     if (map) contacts.push('<button type="button" class="locate" data-id="' + esc(c.id) + '">' + esc(t.locate) + "</button>");
     return '<article class="card clinic" id="c-' + esc(c.id) + '">' +
       "<h3>" + esc(c.name) + "</h3>" +
-      '<p class="city">' + esc(c.address) + "</p>" +
+      '<p class="city">' + esc([c.address, c.city, t.regions[c.region]].filter(Boolean).join(" · ")) + "</p>" +
       '<ul class="specs">' + specsHtml + "</ul>" +
       '<div class="contacts">' + contacts.join("") + "</div></article>";
   }
@@ -67,10 +72,10 @@
     var term = norm(q.value.trim());
     return clinics.filter(function (c) {
       if (region.value && c.region !== region.value) return false;
-      if (spec.value && c.specialties.indexOf(spec.value) < 0) return false;
+      if (spec.value && c.services.indexOf(spec.value) < 0) return false;
       if (term) {
         var hay = norm([c.name, c.city, c.address, t.regions[c.region]].concat(
-          c.specialties.map(function (s) { return t.specialties[s]; })).join(" "));
+          c.services.map(function (s) { return t.services[s]; })).join(" "));
         if (hay.indexOf(term) < 0) return false;
       }
       return true;
@@ -129,7 +134,7 @@
     }).addTo(map);
     clinics.forEach(function (c) {
       markers[c.id] = window.L.marker([c.lat, c.lng], { icon: icon(false), title: c.name })
-        .bindPopup("<strong>" + esc(c.name) + "</strong><br>" + esc(c.city))
+        .bindPopup("<strong>" + esc(c.name) + "</strong><br>" + esc(c.city || t.regions[c.region]) + (c.approx ? "<br><em>" + esc(t.approx) + "</em>" : ""))
         .on("click", function () { select(c.id, true); });
     });
     render();

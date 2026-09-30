@@ -50,8 +50,8 @@
       "description": "Mission, executive board, statutes and history of CSNCP."
     },
     "annuaire": {
-      "title": "Member clinic directory",
-      "description": "Find a member private clinic in Tunisia by region and specialty, with map and contact details."
+      "title": "Clinic directory",
+      "description": "Find a CNAM-affiliated private clinic in Tunisia by governorate and service (surgery, CT scan, MRI, cardiology, lithotripsy)."
     },
     "espace-patient": {
       "title": "Patients",
@@ -82,7 +82,7 @@
     "cta_patient": "Patient information",
     "access_title": "Quick access",
     "access_lead": "All official information from the Chamber, for patients, professionals and the media.",
-    "card_directory": "Member clinics by region and specialty, with map and contact details.",
+    "card_directory": "CNAM-affiliated clinics by governorate and service, with a map.",
     "card_patient": "Your rights, your bill, CNAM and insurance coverage, complaints.",
     "card_travel": "Why get treatment in Tunisia: expertise, proximity and hospitality.",
     "card_chamber": "Mission, executive board, statutes and history of the Chamber.",
@@ -131,13 +131,13 @@
     "team_lead": "The permanent team follows up on files, supports members and handles the Chamber's communications. Composition to be completed."
   },
   "directory": {
-    "title": "Member clinic directory",
-    "lead": "Search for a private clinic that is a member of the Chamber by name, region or specialty.",
-    "demo": "Demo data — official list to be added",
+    "title": "Clinic directory",
+    "lead": "Private clinics with a CNAM agreement, by governorate, with the covered services: surgery, CT scan, MRI, cardiology and lithotripsy.",
+    "demo": "Addresses and phone numbers coming soon · map locations are approximate (city or governorate)",
     "search": "Search",
-    "search_ph": "Name, city…",
+    "search_ph": "Clinic name, city…",
     "region": "Governorate",
-    "specialty": "Specialty",
+    "specialty": "CNAM-covered service",
     "all": "All",
     "all_f": "All",
     "map": "Clinic map",
@@ -159,22 +159,27 @@
       "monastir": "Monastir",
       "sfax": "Sfax",
       "gabes": "Gabès",
-      "medenine": "Medenine"
+      "medenine": "Medenine",
+      "zaghouan": "Zaghouan",
+      "beja": "Beja",
+      "jendouba": "Jendouba",
+      "kef": "Le Kef",
+      "kairouan": "Kairouan",
+      "kasserine": "Kasserine",
+      "mahdia": "Mahdia",
+      "gafsa": "Gafsa",
+      "kebili": "Kebili"
     },
-    "specialties": {
-      "chirurgie": "General surgery",
-      "cardiologie": "Cardiology",
-      "maternite": "Maternity",
-      "oncologie": "Oncology",
-      "ophtalmologie": "Ophthalmology",
-      "orthopedie": "Orthopaedics",
-      "esthetique": "Cosmetic surgery",
-      "dialyse": "Haemodialysis",
-      "pediatrie": "Paediatrics",
-      "urgences": "24/7 emergency",
-      "imagerie": "Medical imaging",
-      "fertilite": "Assisted reproduction"
-    }
+    "services": {
+      "chirurgie": "Surgery",
+      "scanner": "CT scan",
+      "irm": "MRI",
+      "cardio": "Cardiology",
+      "litho": "Lithotripsy"
+    },
+    "mono": "Single-specialty",
+    "approx": "Approximate location",
+    "soon": "Contact details coming soon"
   },
   "patient": {
     "title": "Patients",

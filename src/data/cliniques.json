@@ -1,13 +1,1939 @@
 [
-  {"id": "demo-01", "name": "Clinique exemple — Tunis Centre", "region": "tunis", "city": "Tunis", "address": "Adresse à compléter, Tunis", "lat": 36.8065, "lng": 10.1815, "specialties": ["chirurgie", "cardiologie", "imagerie", "urgences"], "phone": "+216 71 000 000", "email": "contact@exemple.tn", "web": ""},
-  {"id": "demo-02", "name": "Clinique exemple — Les Berges du Lac", "region": "tunis", "city": "Tunis", "address": "Adresse à compléter, Tunis", "lat": 36.8380, "lng": 10.2380, "specialties": ["oncologie", "chirurgie", "imagerie"], "phone": "+216 71 000 001", "email": "contact@exemple.tn", "web": ""},
-  {"id": "demo-03", "name": "Clinique exemple — Ariana", "region": "ariana", "city": "Ariana", "address": "Adresse à compléter, Ariana", "lat": 36.8625, "lng": 10.1956, "specialties": ["maternite", "pediatrie", "fertilite"], "phone": "+216 70 000 002", "email": "contact@exemple.tn", "web": ""},
-  {"id": "demo-04", "name": "Clinique exemple — Ben Arous", "region": "benarous", "city": "Ben Arous", "address": "Adresse à compléter, Ben Arous", "lat": 36.7531, "lng": 10.2189, "specialties": ["orthopedie", "chirurgie", "dialyse"], "phone": "+216 79 000 003", "email": "contact@exemple.tn", "web": ""},
-  {"id": "demo-05", "name": "Clinique exemple — Sousse", "region": "sousse", "city": "Sousse", "address": "Adresse à compléter, Sousse", "lat": 35.8256, "lng": 10.6360, "specialties": ["ophtalmologie", "esthetique", "chirurgie"], "phone": "+216 73 000 004", "email": "contact@exemple.tn", "web": ""},
-  {"id": "demo-06", "name": "Clinique exemple — Monastir", "region": "monastir", "city": "Monastir", "address": "Adresse à compléter, Monastir", "lat": 35.7643, "lng": 10.8113, "specialties": ["cardiologie", "urgences", "imagerie"], "phone": "+216 73 000 005", "email": "contact@exemple.tn", "web": ""},
-  {"id": "demo-07", "name": "Clinique exemple — Sfax", "region": "sfax", "city": "Sfax", "address": "Adresse à compléter, Sfax", "lat": 34.7406, "lng": 10.7603, "specialties": ["chirurgie", "maternite", "oncologie", "urgences"], "phone": "+216 74 000 006", "email": "contact@exemple.tn", "web": ""},
-  {"id": "demo-08", "name": "Clinique exemple — Nabeul", "region": "nabeul", "city": "Hammamet", "address": "Adresse à compléter, Hammamet", "lat": 36.4000, "lng": 10.6167, "specialties": ["esthetique", "orthopedie"], "phone": "+216 72 000 007", "email": "contact@exemple.tn", "web": ""},
-  {"id": "demo-09", "name": "Clinique exemple — Bizerte", "region": "bizerte", "city": "Bizerte", "address": "Adresse à compléter, Bizerte", "lat": 37.2744, "lng": 9.8739, "specialties": ["maternite", "pediatrie", "chirurgie"], "phone": "+216 72 000 008", "email": "contact@exemple.tn", "web": ""},
-  {"id": "demo-10", "name": "Clinique exemple — Djerba", "region": "medenine", "city": "Djerba", "address": "Adresse à compléter, Djerba", "lat": 33.8076, "lng": 10.8451, "specialties": ["dialyse", "urgences", "imagerie"], "phone": "+216 75 000 009", "email": "contact@exemple.tn", "web": ""},
-  {"id": "demo-11", "name": "Clinique exemple — Gabès", "region": "gabes", "city": "Gabès", "address": "Adresse à compléter, Gabès", "lat": 33.8815, "lng": 10.0982, "specialties": ["chirurgie", "maternite"], "phone": "+216 75 000 010", "email": "contact@exemple.tn", "web": ""}
+ {
+  "id": "clinique-alyssa",
+  "name": "Clinique Alyssa",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 36.8065,
+  "lng": 10.1815,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-cardio-vasculaire-gnrale-du-lac",
+  "name": "Clinique Cardio-Vasculaire & Générale du Lac",
+  "region": "tunis",
+  "city": "Les Berges du Lac",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 36.835,
+  "lng": 10.235,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-carthage",
+  "name": "Clinique Carthage",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 36.80208,
+  "lng": 10.18555,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-la-libert",
+  "name": "Clinique La Liberté",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 36.80724,
+  "lng": 10.17305,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-de-la-mdina-de-tunis",
+  "name": "Clinique de la Médina de Tunis",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 36.81282,
+  "lng": 10.18975,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-de-l-espoir",
+  "name": "Clinique de l'Espoir",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner"
+  ],
+  "mono": false,
+  "lat": 36.79468,
+  "lng": 10.17941,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-el-amen-mutuelleville",
+  "name": "Clinique El Amen Mutuelleville",
+  "region": "tunis",
+  "city": "Mutuelleville",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 36.8262,
+  "lng": 10.17,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-el-amen-la-marsa",
+  "name": "Clinique El Amen La Marsa",
+  "region": "tunis",
+  "city": "La Marsa",
+  "services": [
+   "chirurgie",
+   "scanner"
+  ],
+  "mono": false,
+  "lat": 36.8782,
+  "lng": 10.3247,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-el-manar",
+  "name": "Clinique El Manar",
+  "region": "tunis",
+  "city": "El Manar",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm",
+   "cardio",
+   "litho"
+  ],
+  "mono": false,
+  "lat": 36.842,
+  "lng": 10.16,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-el-menzeh-st-l-espoir",
+  "name": "Polyclinique El Menzeh (Sté L'Espoir)",
+  "region": "tunis",
+  "city": "El Menzeh",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "litho"
+  ],
+  "mono": false,
+  "lat": 36.845,
+  "lng": 10.18,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-gnrale-cardio-vasculaire-de-tunis",
+  "name": "Clinique Générale & Cardio-Vasculaire de Tunis",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 36.81782,
+  "lng": 10.1743,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-avicenne",
+  "name": "Clinique Avicenne",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner"
+  ],
+  "mono": false,
+  "lat": 36.80268,
+  "lng": 10.19569,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-internationale-d-ophtalmologie",
+  "name": "Clinique Internationale d'Ophtalmologie",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": true,
+  "lat": 36.79919,
+  "lng": 10.16741,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-inter-les-pins-myron",
+  "name": "Clinique Inter Les Pins « Myron »",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 36.82244,
+  "lng": 10.18733,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-la-rose",
+  "name": "Clinique La Rose",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 36.78986,
+  "lng": 10.18836,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-les-jardins",
+  "name": "Clinique Les Jardins",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 36.81455,
+  "lng": 10.16432,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-les-jasmins",
+  "name": "Clinique Les Jasmins",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm"
+  ],
+  "mono": false,
+  "lat": 36.81245,
+  "lng": 10.20049,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-montplaisir",
+  "name": "Clinique Montplaisir",
+  "region": "tunis",
+  "city": "Montplaisir",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 36.819,
+  "lng": 10.195,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-mourali",
+  "name": "Clinique Mourali",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": true,
+  "lat": 36.78852,
+  "lng": 10.17107,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-ophtalmologique-de-tunis",
+  "name": "Clinique Ophtalmologique de Tunis",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": true,
+  "lat": 36.82763,
+  "lng": 10.17687,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-ophtalmo-du-lac-st-amc",
+  "name": "Clinique Ophtalmo du Lac (Sté AMC)",
+  "region": "tunis",
+  "city": "Les Berges du Lac",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": true,
+  "lat": 36.83058,
+  "lng": 10.23905,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-sidi-salah",
+  "name": "Clinique Sidi Salah",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 36.79358,
+  "lng": 10.19986,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-saint-augustin",
+  "name": "Clinique Saint Augustin",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm",
+   "cardio",
+   "litho"
+  ],
+  "mono": false,
+  "lat": 36.80353,
+  "lng": 10.15845,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "institut-vision-rtine",
+  "name": "Institut Vision & Rétine",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": true,
+  "lat": 36.82484,
+  "lng": 10.19698,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "i-h-c-carthagne",
+  "name": "I.H.C Carthagène",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm",
+   "cardio",
+   "litho"
+  ],
+  "mono": false,
+  "lat": 36.78178,
+  "lng": 10.18251,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "la-nouvelle-clinique-du-parc",
+  "name": "La Nouvelle Clinique du Parc",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 36.82456,
+  "lng": 10.16356,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-le-secours",
+  "name": "Clinique Le Secours",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "litho"
+  ],
+  "mono": false,
+  "lat": 36.80527,
+  "lng": 10.20762,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-les-berges-du-lac",
+  "name": "Polyclinique Les Berges du Lac",
+  "region": "tunis",
+  "city": "Les Berges du Lac",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 36.83574,
+  "lng": 10.22655,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-pasteur",
+  "name": "Polyclinique Pasteur",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 36.78932,
+  "lng": 10.16089,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-taoufik",
+  "name": "Polyclinique Taoufik",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 36.83375,
+  "lng": 10.18519,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-lafayette",
+  "name": "Clinique Lafayette",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 36.78339,
+  "lng": 10.19755,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-internationale-hannibal",
+  "name": "Clinique Internationale Hannibal",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 36.81284,
+  "lng": 10.15343,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-jugurtha",
+  "name": "Clinique Jugurtha",
+  "region": "tunis",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 36.82109,
+  "lng": 10.20702,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-el-farabi",
+  "name": "Clinique El Farabi",
+  "region": "ariana",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "litho"
+  ],
+  "mono": false,
+  "lat": 36.8625,
+  "lng": 10.1956,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-la-soukra",
+  "name": "Clinique La Soukra",
+  "region": "ariana",
+  "city": "La Soukra",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm"
+  ],
+  "mono": false,
+  "lat": 36.875,
+  "lng": 10.25,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-ennasr-socit-errahma",
+  "name": "Clinique Ennasr (Société Errahma)",
+  "region": "ariana",
+  "city": "Ennasr",
+  "services": [
+   "chirurgie",
+   "scanner"
+  ],
+  "mono": false,
+  "lat": 36.86,
+  "lng": 10.165,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-mditerranenne",
+  "name": "Clinique Méditerranéenne",
+  "region": "ariana",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner"
+  ],
+  "mono": false,
+  "lat": 36.85808,
+  "lng": 10.19965,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-inter-les-narcisses",
+  "name": "Polyclinique Inter. Les Narcisses",
+  "region": "ariana",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm"
+  ],
+  "mono": false,
+  "lat": 36.86324,
+  "lng": 10.18715,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-el-mourouj",
+  "name": "Clinique El Mourouj",
+  "region": "benarous",
+  "city": "El Mourouj",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 36.73,
+  "lng": 10.21,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-mgrine",
+  "name": "Clinique Mégrine",
+  "region": "benarous",
+  "city": "Mégrine",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 36.77,
+  "lng": 10.23,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-aboulkacem-ezzahraoui",
+  "name": "Clinique Aboulkacem Ezzahraoui",
+  "region": "benarous",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 36.7531,
+  "lng": 10.2189,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-el-walid",
+  "name": "Clinique El Walid",
+  "region": "benarous",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 36.74868,
+  "lng": 10.22295,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-ezzahra",
+  "name": "Clinique Ezzahra",
+  "region": "benarous",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm"
+  ],
+  "mono": false,
+  "lat": 36.75384,
+  "lng": 10.21045,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-hammam-lif",
+  "name": "Polyclinique Hammam Lif",
+  "region": "benarous",
+  "city": "Hammam Lif",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 36.73,
+  "lng": 10.34,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-ibn-rochd",
+  "name": "Clinique Ibn Rochd",
+  "region": "nabeul",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 36.4561,
+  "lng": 10.7376,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-les-violettes",
+  "name": "Clinique Les Violettes",
+  "region": "nabeul",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "litho"
+  ],
+  "mono": false,
+  "lat": 36.45168,
+  "lng": 10.74165,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-el-hakim",
+  "name": "Clinique El Hakim",
+  "region": "nabeul",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner"
+  ],
+  "mono": false,
+  "lat": 36.45684,
+  "lng": 10.72915,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-el-amen-nabeul",
+  "name": "Clinique El Amen Nabeul",
+  "region": "nabeul",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 36.46242,
+  "lng": 10.74585,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-hammamet",
+  "name": "Polyclinique Hammamet",
+  "region": "nabeul",
+  "city": "Hammamet",
+  "services": [
+   "chirurgie",
+   "scanner"
+  ],
+  "mono": false,
+  "lat": 36.4,
+  "lng": 10.6167,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-kelibia",
+  "name": "Clinique Kelibia",
+  "region": "nabeul",
+  "city": "Kelibia",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 36.8475,
+  "lng": 11.0939,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-du-cap-bon",
+  "name": "Clinique du Cap Bon",
+  "region": "nabeul",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner"
+  ],
+  "mono": false,
+  "lat": 36.44428,
+  "lng": 10.73551,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-zaghouan",
+  "name": "Clinique Zaghouan",
+  "region": "zaghouan",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner"
+  ],
+  "mono": false,
+  "lat": 36.4029,
+  "lng": 10.1429,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-rouabi",
+  "name": "Clinique Rouabi",
+  "region": "bizerte",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner"
+  ],
+  "mono": false,
+  "lat": 37.2744,
+  "lng": 9.8739,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-el-amen-bizerte",
+  "name": "Clinique El Amen Bizerte",
+  "region": "bizerte",
+  "city": "Bizerte",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 37.26998,
+  "lng": 9.87795,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-el-amen-beja",
+  "name": "Clinique El Amen Béja",
+  "region": "beja",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm"
+  ],
+  "mono": false,
+  "lat": 36.7256,
+  "lng": 9.1817,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-el-khalil",
+  "name": "Clinique El Khalil",
+  "region": "jendouba",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 36.5011,
+  "lng": 8.7802,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-les-anges",
+  "name": "Clinique Les Anges",
+  "region": "jendouba",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 36.49668,
+  "lng": 8.78425,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-jugurtha-2",
+  "name": "Clinique Jugurtha",
+  "region": "kef",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 36.1822,
+  "lng": 8.7148,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-okba",
+  "name": "Polyclinique Okba",
+  "region": "kairouan",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 35.6781,
+  "lng": 10.0963,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-hamda-laouani",
+  "name": "Polyclinique Hamda Laouani",
+  "region": "kairouan",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "cardio",
+   "litho"
+  ],
+  "mono": false,
+  "lat": 35.67368,
+  "lng": 10.10035,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-echifa",
+  "name": "Clinique Echifa",
+  "region": "kasserine",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 35.1676,
+  "lng": 8.8365,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-les-oliviers",
+  "name": "Clinique Les Oliviers",
+  "region": "sousse",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 35.8256,
+  "lng": 10.636,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-la-corniche-cur-vaisseaux",
+  "name": "Clinique La Corniche « Cœur & Vaisseaux »",
+  "region": "sousse",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 35.82118,
+  "lng": 10.64005,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-essalem",
+  "name": "Clinique Essalem",
+  "region": "sousse",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm",
+   "cardio",
+   "litho"
+  ],
+  "mono": false,
+  "lat": 35.82634,
+  "lng": 10.62755,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-les-oliviers-d-ophtalmologie-ex-jawhara-d-ophtalmologie",
+  "name": "Clinique Les Oliviers d'Ophtalmologie (ex Jawhara d'Ophtalmologie)",
+  "region": "sousse",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 35.83192,
+  "lng": 10.64425,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-ezzahra-2",
+  "name": "Clinique Ezzahra",
+  "region": "sousse",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 35.81378,
+  "lng": 10.63391,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-el-yosr",
+  "name": "Clinique El Yosr",
+  "region": "sousse",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 35.83692,
+  "lng": 10.6288,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-carthage-medical",
+  "name": "Clinique Carthage Medical",
+  "region": "monastir",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 35.7643,
+  "lng": 10.8113,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-debbabi",
+  "name": "Clinique Debbabi",
+  "region": "monastir",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner"
+  ],
+  "mono": false,
+  "lat": 35.75988,
+  "lng": 10.81535,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-essouani",
+  "name": "Clinique Essouani",
+  "region": "monastir",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 35.76504,
+  "lng": 10.80285,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "la-grande-clinique-du-centre",
+  "name": "La Grande Clinique du Centre",
+  "region": "monastir",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "litho"
+  ],
+  "mono": false,
+  "lat": 35.77062,
+  "lng": 10.81955,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-du-sahel",
+  "name": "Clinique du Sahel",
+  "region": "monastir",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner"
+  ],
+  "mono": false,
+  "lat": 35.75248,
+  "lng": 10.80921,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-concorde",
+  "name": "Clinique Concorde",
+  "region": "monastir",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner"
+  ],
+  "mono": false,
+  "lat": 35.77562,
+  "lng": 10.8041,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-errahma",
+  "name": "Polyclinique Errahma",
+  "region": "mahdia",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 35.5047,
+  "lng": 11.0622,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-l-excellence",
+  "name": "Polyclinique L'Excellence",
+  "region": "mahdia",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner"
+  ],
+  "mono": false,
+  "lat": 35.50028,
+  "lng": 11.06625,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-erriadh",
+  "name": "Polyclinique Erriadh",
+  "region": "sfax",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 34.7406,
+  "lng": 10.7603,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-chams",
+  "name": "Polyclinique Chams",
+  "region": "sfax",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "cardio",
+   "litho"
+  ],
+  "mono": false,
+  "lat": 34.73618,
+  "lng": 10.76435,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-essalama",
+  "name": "Polyclinique Essalama",
+  "region": "sfax",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "litho"
+  ],
+  "mono": false,
+  "lat": 34.74134,
+  "lng": 10.75185,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-errayhane-ex-najda",
+  "name": "Polyclinique Errayhane (ex Najda)",
+  "region": "sfax",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner"
+  ],
+  "mono": false,
+  "lat": 34.74692,
+  "lng": 10.76855,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-zitouna",
+  "name": "Polyclinique Zitouna",
+  "region": "sfax",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 34.72878,
+  "lng": 10.75821,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-ibn-khaldoun",
+  "name": "Polyclinique Ibn Khaldoun",
+  "region": "sfax",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 34.75192,
+  "lng": 10.7531,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-el-alya",
+  "name": "Polyclinique El Alya",
+  "region": "sfax",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm",
+   "cardio",
+   "litho"
+  ],
+  "mono": false,
+  "lat": 34.73678,
+  "lng": 10.77449,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-el-bassatine",
+  "name": "Polyclinique El Bassatine",
+  "region": "sfax",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 34.73329,
+  "lng": 10.74621,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-ennour",
+  "name": "Polyclinique Ennour",
+  "region": "sfax",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 34.75654,
+  "lng": 10.76613,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-meignie",
+  "name": "Polyclinique Meignie",
+  "region": "sfax",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "litho"
+  ],
+  "mono": false,
+  "lat": 34.72396,
+  "lng": 10.76716,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-siphax",
+  "name": "Polyclinique Siphax",
+  "region": "sfax",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 34.74865,
+  "lng": 10.74312,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-ibn-annafis",
+  "name": "Polyclinique Ibn Annafis",
+  "region": "sfax",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "irm",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 34.74655,
+  "lng": 10.77929,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-sfax-mdina",
+  "name": "Polyclinique Sfax Médina",
+  "region": "sfax",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner"
+  ],
+  "mono": false,
+  "lat": 34.72262,
+  "lng": 10.74987,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-errachid",
+  "name": "Polyclinique Errachid",
+  "region": "sfax",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner"
+  ],
+  "mono": false,
+  "lat": 34.76173,
+  "lng": 10.75567,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-imen",
+  "name": "Polyclinique Imen",
+  "region": "gafsa",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 34.425,
+  "lng": 8.7842,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-el-amen-ex-les-palmiers",
+  "name": "Polyclinique El Amen (ex Les Palmiers)",
+  "region": "gafsa",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 34.42058,
+  "lng": 8.78825,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-yosri",
+  "name": "Clinique Yosri",
+  "region": "gafsa",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 34.42574,
+  "lng": 8.77575,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-nefzaoua",
+  "name": "Polyclinique Nefzaoua",
+  "region": "kebili",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 33.7044,
+  "lng": 8.969,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-bon-secours",
+  "name": "Polyclinique Bon Secours",
+  "region": "gabes",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm"
+  ],
+  "mono": false,
+  "lat": 33.8815,
+  "lng": 10.0982,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-ophtalmologique-du-sud",
+  "name": "Clinique Ophtalmologique du Sud",
+  "region": "gabes",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": true,
+  "lat": 33.87708,
+  "lng": 10.10225,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-nour",
+  "name": "Polyclinique Nour",
+  "region": "gabes",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 33.88224,
+  "lng": 10.08975,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-aboulbaba-el-ansari",
+  "name": "Clinique Aboulbaba El Ansari",
+  "region": "gabes",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 33.88782,
+  "lng": 10.10645,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-ibn-arafa",
+  "name": "Clinique Ibn Arafa",
+  "region": "medenine",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 33.3549,
+  "lng": 10.5055,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-el-yasmine",
+  "name": "Polyclinique El Yasmine",
+  "region": "medenine",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner"
+  ],
+  "mono": false,
+  "lat": 33.35048,
+  "lng": 10.50955,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-jerba-internationale",
+  "name": "Polyclinique Jerba Internationale",
+  "region": "medenine",
+  "city": "Djerba",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm",
+   "litho"
+  ],
+  "mono": false,
+  "lat": 33.8764,
+  "lng": 10.8575,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-echifa-2",
+  "name": "Clinique Echifa",
+  "region": "medenine",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "litho"
+  ],
+  "mono": false,
+  "lat": 33.35564,
+  "lng": 10.49705,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-djerba-la-douce",
+  "name": "Polyclinique Djerba La Douce",
+  "region": "medenine",
+  "city": "Djerba",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm",
+   "cardio"
+  ],
+  "mono": false,
+  "lat": 33.87198,
+  "lng": 10.86155,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-dar-essalem-ex-ezzeitouna",
+  "name": "Polyclinique Dar Essalem (ex Ezzeitouna)",
+  "region": "medenine",
+  "city": "",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm"
+  ],
+  "mono": false,
+  "lat": 33.36122,
+  "lng": 10.51375,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "polyclinique-amel-zarzis",
+  "name": "Polyclinique Amel Zarzis",
+  "region": "medenine",
+  "city": "Zarzis",
+  "services": [
+   "chirurgie",
+   "scanner",
+   "irm",
+   "litho"
+  ],
+  "mono": false,
+  "lat": 33.5039,
+  "lng": 11.1122,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-arij",
+  "name": "Clinique Arij",
+  "region": "medenine",
+  "city": "",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 33.34308,
+  "lng": 10.50341,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ },
+ {
+  "id": "clinique-djerba-center",
+  "name": "Clinique Djerba Center",
+  "region": "medenine",
+  "city": "Djerba",
+  "services": [
+   "chirurgie"
+  ],
+  "mono": false,
+  "lat": 33.87714,
+  "lng": 10.84905,
+  "approx": true,
+  "address": "",
+  "phone": "",
+  "email": "",
+  "web": ""
+ }
 ]

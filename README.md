@@ -18,7 +18,7 @@ Site web institutionnel de la **Chambre Syndicale Nationale des Cliniques Privé
 ## Modifier le contenu
 
 - **Textes** : `src/i18n/fr.json`, `ar.json`, `en.json` (mêmes clés dans les trois langues).
-- **Cliniques** : `src/data/cliniques.json` (nom, gouvernorat, coordonnées GPS, spécialités, contacts).
+- **Cliniques** : `src/data/cliniques.json` — liste des cliniques conventionnées CNAM (source : « État des cliniques privées conventionnées avec la CNAM »). Champs : `name`, `region` (gouvernorat), `city`, `services` (`chirurgie`, `scanner`, `irm`, `cardio`, `litho`), `mono` (monodisciplinaire), `lat`/`lng` (position indicative tant que `approx` vaut `true`), `address`, `phone`, `email`, `web` (à compléter).
 - **Actualités / communiqués** : `src/data/actualites.json` (`type` : `actualite`, `position` ou `communique`).
 - **Chiffres clés** : `src/data/chiffres.json` · **Bureau exécutif** : `src/data/bureau.json`.
 
