@@ -233,7 +233,7 @@ p { margin: 0 0 1em; }
 .hero-visual { display: flex; justify-content: flex-end; }
 .hero-visual .logo-anim {
   width: min(100%, 270px); margin: 0; padding: 22px 22px 18px; border-radius: 24px;
-  background: rgba(255,255,255,.9); box-shadow: 0 20px 50px rgba(0,20,50,.28);
+  background: rgba(255,255,255,.72); box-shadow: 0 20px 50px rgba(0,20,50,.22); border: 1px solid rgba(255,255,255,.5);
   -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
 }
 .logo-anim { width: min(100%, 440px); margin-inline: auto; }
