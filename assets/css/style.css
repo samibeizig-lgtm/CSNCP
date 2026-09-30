@@ -231,6 +231,7 @@ p { margin: 0 0 1em; }
 .hero .btn.ghost { background: transparent; color: #fff; }
 .hero .btn.ghost:hover { background: rgba(255,255,255,.14); color: #fff; border-color: #fff; }
 .hero-visual { display: flex; justify-content: flex-end; }
+.hero + .section { margin-block-start: clamp(16px, 2vw, 28px); }
 .hero-visual .logo-anim {
   width: min(100%, 270px); margin: 0; padding: 22px 22px 18px; border-radius: 24px;
   background: rgba(255,255,255,.72); box-shadow: 0 20px 50px rgba(0,20,50,.22); border: 1px solid rgba(255,255,255,.5);
