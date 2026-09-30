@@ -81,7 +81,10 @@
     "cta_directory": "Find a clinic",
     "cta_patient": "Patient information",
     "news_title": "Latest news",
-    "news_all": "All news"
+    "news_all": "All news",
+    "video_title": "The Chamber in the media",
+    "video_lead": "The National Syndical Chamber of Private Clinics on Express FM.",
+    "video_link": "Watch the video on Express FM's Facebook page"
   },
   "figures": {
     "title": "Key figures",

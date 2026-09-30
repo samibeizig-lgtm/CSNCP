@@ -81,7 +81,10 @@
     "cta_directory": "Trouver une clinique",
     "cta_patient": "Espace patient",
     "news_title": "Dernières actualités",
-    "news_all": "Toutes les actualités"
+    "news_all": "Toutes les actualités",
+    "video_title": "La Chambre dans les médias",
+    "video_lead": "Intervention de la Chambre syndicale nationale des cliniques privées sur Express FM.",
+    "video_link": "Voir la vidéo sur la page Facebook d'Express FM"
   },
   "figures": {
     "title": "Chiffres clés",
